@@ -17,6 +17,8 @@ title: Historia de las Clarisas en Elche
   En diciembre de 1853 el convento de la Encarnación sufrió daños graves a causa de una gran tormenta, por lo que quedó prácticamente arruinado. Como consecuencia, las monjas clarisas se trasladaron provisionalmente al antiguo Convento de la Merced (también conocido como de Santa Lucía).
 </p>
 
+<img src="/imagenes/convento-merced-1.jpg" alt="Fachada del convento de la Merced" />
+
 <p>
   Posteriormente, en mayo de 1854, el Ayuntamiento de Elche aceptó formalmente la permuta que intercambiaba los dos edificios, de modo que las clarisas pasaron a ser propietarias del convento de la Merced.
 </p>
@@ -25,7 +27,6 @@ title: Historia de las Clarisas en Elche
   El edificio contaba con iglesia propia, que fue muy frecuentada por los fieles. Lamentablemente, esta iglesia fue quemada en febrero de 1936, durante disturbios previos al inicio de la Guerra Civil.
 </p>
 
-<img src="/imagenes/convento-merced-1.jpg" alt="Fachada del convento de la Merced" />
 <img src="/imagenes/convento-merced-2.jpg" alt="Interior del convento de la Merced" />
 
 <h2>Actual convento de Santa Clara</h2>
