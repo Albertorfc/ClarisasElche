@@ -99,6 +99,13 @@ img {
   padding: 2rem;
 }
 
+/* 👇 NUEVO: Ajuste solo para sobremesa */
+@media (min-width: 768px) {
+  .hero-header {
+    background-position: center 25%;
+  }
+}
+
 .hero-header h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
@@ -141,4 +148,3 @@ img {
     column-count: 1;
   }
 }
-
