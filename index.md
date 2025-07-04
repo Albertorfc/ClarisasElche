@@ -5,7 +5,7 @@ title: Hermanas Clarisas de Elche
 
 <section class="row">
   <div class="column">
-    <img src="/imagenes/paz-y-bien-ocre.png" alt="Paz y Bien" style="margin-bottom: 2rem;" />
+    <img src="/imagenes/paz-y-bien-ocre.png" alt="Paz y Bien" style="margin-bottom: 2rem;"  text-align: center; />
     <h2>¡Paz y bien!</h2>
     <p>
       Bienvenidos a la página del monasterio de las Hermanas Clarisas de Elche, mujeres que siguen una vida
