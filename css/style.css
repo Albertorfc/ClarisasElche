@@ -148,3 +148,14 @@ img {
     column-count: 1;
   }
 }
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+}
