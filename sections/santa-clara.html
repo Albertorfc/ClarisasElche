@@ -1,113 +1,23 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <link rel="stylesheet" href="../css/style.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Santa Clara de Asís</title>
-  <style>
-    body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; color: #333; }
-    header, footer { background-color: #e0d7c6; text-align: center; padding: 1.5rem; }
-    nav { background-color: #a08966; }
-    .nav-container {
-      max-width: 1000px; margin: auto;
-      display: flex; justify-content: space-between;
-      align-items: center; padding: 0.5rem 1rem;
-    }
-    .nav-links {
-      display: none; flex-direction: column;
-      background-color: #a08966;
-    }
-    .nav-links a {
-      color: white; text-decoration: none;
-      padding: 0.75rem 1rem;
-      border-top: 1px solid #d9c8b3;
-    }
-    .menu-toggle {
-      background: none; border: none;
-      font-size: 1.8rem; color: white;
-      cursor: pointer;
-    }
-    .nav-links.show { display: flex; }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    .row {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .column {
-      flex: 1;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-    }
-    @media(min-width: 768px) {
-      .row { flex-direction: row; }
-      .nav-links { display: flex; flex-direction: row; }
-      .nav-links a { border-top: none; }
-      .menu-toggle { display: none; }
-    }
-  </style>
-</head>
-<body>
-<header>
-    <h1>Hermanas Pobres de Santa Clara</h1>
-    <p>Monasterio de Santa Clara de Elche</p>
-    <p>Viviendo el carisma de Santa Clara de Asís en Elche desde 1516</p>
-  </header>
-  
+---
+layout: layouts/base.njk
+title: Santa Clara de Asís
+---
 
-  <nav>
-    <div class="nav-container">
-      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
-      <div class="nav-links">
-        <a href="../index.html">Inicio</a>
-        <a href="santa-clara.html">Santa Clara</a>
-        <a href="hermanas-pobres.html">Hermanas Pobres</a>
-        <a href="vocacion.html">Vocación Clarisa</a>
-        <a href="en-elche.html">En Elche</a>
-        <a href="oraciones.html">Oraciones</a>
-        <a href="tercera-orden.html">Tercera Orden</a>
-        <a href="colabora.html">Colabora</a>
-        <a href="visitanos.html">Visítanos</a>
-      </div>
+<section>
+  <div class="row">
+    <div class="column">
+      <h2>Orígenes y vocación</h2>
+      <p><strong>Santa Clara de Asís</strong> nació en 1193 en una familia noble. Desde joven mostró un corazón orientado hacia Dios. El encuentro con <strong>San Francisco</strong> marcó profundamente su camino espiritual.</p>
+      <p>La noche del Domingo de Ramos de 1212, Clara abandonó su hogar y consagró su vida al Señor. Francisco le impuso el hábito y la acogió en la Porciúncula. Así nació la Orden de las Hermanas Pobres.</p>
+      <img src="/imagenes/santa-clara-icono.jpg" alt="Icono de Santa Clara" />
     </div>
-  </nav>
-
-  <section>
-    <div class="row">
-      <div class="column">
-        <h2>Orígenes y vocación</h2>
-        <p><strong>Santa Clara de Asís</strong> nació en 1193 en una familia noble. Desde joven mostró un corazón orientado hacia Dios. El encuentro con <strong>San Francisco</strong> marcó profundamente su camino espiritual.</p>
-        <p>La noche del Domingo de Ramos de 1212, Clara abandonó su hogar y consagró su vida al Señor. Francisco le impuso el hábito y la acogió en la Porciúncula. Así nació la Orden de las Hermanas Pobres.</p>
-        <img src="../imagenes/santa-clara-icono.jpg" alt="Icono de Santa Clara" />
-      </div>
-      <div class="column">
-        <h2>Vida interior y legado</h2>
-        <p>Desde San Damián, Clara vivió en radical pobreza, oración y contemplación. Su vida estuvo marcada por una profunda <strong>relación con Jesucristo</strong> y una inmensa devoción al <strong>Santísimo Sacramento</strong>.</p>
-        <p>En su enfermedad, Clara vivió experiencias místicas. Se le atribuye la visión de la misa desde su lecho, motivo por el cual fue nombrada <em>patrona de la televisión</em>.</p>
-        <img src="../imagenes/santa-clara-lirios.jpg" alt="Santa Clara entre lirios" />
-        <p>Clara escribió la primera regla femenina aprobada por la Iglesia. Murió en 1253. Su cuerpo se conserva en Asís, donde es venerada con profunda devoción.</p>
-        <img src="../imagenes/santa-clara-relicario.jpeg" alt="Cuerpo de Santa Clara en Asís" />
-      </div>
+    <div class="column">
+      <h2>Vida interior y legado</h2>
+      <p>Desde San Damián, Clara vivió en radical pobreza, oración y contemplación. Su vida estuvo marcada por una profunda <strong>relación con Jesucristo</strong> y una inmensa devoción al <strong>Santísimo Sacramento</strong>.</p>
+      <p>En su enfermedad, Clara vivió experiencias místicas. Se le atribuye la visión de la misa desde su lecho, motivo por el cual fue nombrada <em>patrona de la televisión</em>.</p>
+      <img src="/imagenes/santa-clara-lirios.jpg" alt="Santa Clara entre lirios" />
+      <p>Clara escribió la primera regla femenina aprobada por la Iglesia. Murió en 1253. Su cuerpo se conserva en Asís, donde es venerada con profunda devoción.</p>
+      <img src="/imagenes/santa-clara-relicario.jpeg" alt="Cuerpo de Santa Clara en Asís" />
     </div>
-  </section>
-
-  
-<footer>
-    <p>
-      <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank" style="text-decoration: none; color: #6b4e2f;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:20px; vertical-align:middle; margin-right:6px;">
-        @deliciasdesantaclaraelche
-      </a>
-    </p>
-    <p>&copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara</p>
-  </footer>
-</body>
-</html>
+  </div>
+</section>
