@@ -122,3 +122,10 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.centrado {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
