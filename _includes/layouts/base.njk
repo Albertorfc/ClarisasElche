@@ -4,41 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <header class="hero-header">
-  <div class="hero-text">
-    <h1>{{ title }}</h1>
-    <p>Monasterio de Santa Clara de Elche</p>
-    <p>Viviendo el carisma de Santa Clara de Asís en Elche desde 1516</p>
-  </div>
-</header>
 
-  <nav class="nav-container">
-    <button class="menu-toggle">☰</button>
-    {% include "nav.njk" %}
+  <!-- Cabecera común -->
+  <header class="hero-header">
+    <div class="hero-text">
+      <h1>Hermanas Pobres de Santa Clara</h1>
+      <p>Monasterio de Santa Clara de Elche</p>
+      <p>Viviendo el carisma de Santa Clara de Asís en Elche desde 1516</p>
+    </div>
+  </header>
+
+  <!-- Menú común -->
+  <nav>
+    <div class="nav-container">
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+      {% include "nav.njk" %}
+    </div>
   </nav>
 
+  <!-- Contenido de cada página -->
   <main>
     {{ content | safe }}
   </main>
 
+  <!-- Footer común -->
   <footer>
-    <p>&copy; 2025 Hermanas Clarisas de Elche</p>
+    <p>
+      <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank" style="text-decoration: none; color: #6b4e2f;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:20px; vertical-align:middle; margin-right:6px;">
+        @deliciasdesantaclaraelche
+      </a>
+    </p>
+    <p>&copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara</p>
   </footer>
 
+  <!-- Script del menú hamburguesa -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', () => {
       const toggle = document.querySelector('.menu-toggle');
-      const nav = document.querySelector('.nav-links');
-
-      if (toggle && nav) {
-        toggle.addEventListener('click', function () {
-          nav.classList.toggle('show');
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          document.querySelector('.nav-links').classList.toggle('show');
         });
       }
     });
   </script>
+
 </body>
 </html>
