@@ -20,7 +20,7 @@ title: Contacto
 
 <p>
   🕊 <strong>Lunes a sábado:</strong> 8:00 h<br />
-  ✝ <strong>Domingos y festivos:</strong> 9:00 h
+  ✝ <strong>Domingos y festivos:</strong> 11:00 h
 </p>
 
 <h2>Horarios de visita</h2>
@@ -41,11 +41,11 @@ title: Contacto
 <h2>Cómo llegar</h2>
 
 <p>
-  El monasterio está situado junto al cauce del río Vinalopó, cerca del Puente del <em>Bimil·lenari</em>. Se puede acceder en coche (hay aparcamiento cercano) o en transporte urbano.
+  El monasterio está situado junto al cauce del río Vinalopó, cerca del Puente del <em>Bimil·lenari</em>. Se puede acceder en coche (hay aparcamiento).
 </p>
 
 <p>
-  <a href="https://goo.gl/maps/tu-mapa-aqui" target="_blank">📍 Ver en Google Maps</a>
+  <a href="[https://maps.app.goo.gl/hyyDRgRB7y2bmyPCA]" target="_blank">📍 Ver en Google Maps</a>
 </p>
 
 <h2>Mensaje fraterno</h2>
