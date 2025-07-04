@@ -102,7 +102,7 @@ img {
 /* 👇 NUEVO: Ajuste solo para sobremesa */
 @media (min-width: 768px) {
   .hero-header {
-    background-position: center 25%;
+    background-position: center 30%;
   }
 }
 
