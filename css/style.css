@@ -1,114 +1,38 @@
+/* ----------------------------------------
+   TIPOGRAFÍA Y ESTILO BASE
+---------------------------------------- */
 body {
+  font-family: Georgia, serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
   margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #fdfaf5;
-  color: #333;
+  padding: 0;
 }
 
-header, footer {
-  background-color: #e0d7c6;
+/* ----------------------------------------
+   IMÁGENES CENTRADAS
+---------------------------------------- */
+.centrado {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding: 1.5rem;
 }
 
-.nav-container {
-  background-color: #a08966;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-}
-
-.nav-links {
-  display: none;
-  flex-direction: column;
-  background-color: #a08966;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 0.75rem 1rem;
-  border-top: 1px solid #d9c8b3;
-  font-weight: bold;
-}
-
-.nav-links.show {
-  display: flex;
-}
-
-.menu-toggle {
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-  }
-  .nav-links a {
-    border-top: none;
-  }
-  .menu-toggle {
-    display: none;
-  }
-}
-
-main {
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem 1rem;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 12px;
-}
-
-.row {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.column {
-  flex: 1;
-}
-
-@media (min-width: 768px) {
-  .row {
-    flex-direction: row;
-  }
-}
-
-.hero-header {
-  background: url('/imagenes/santa-clara-francisco.png') no-repeat center center;
-  background-size: cover;
-  color: white;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* ----------------------------------------
+   ENCABEZADOS CENTRADOS OPCIONALES
+---------------------------------------- */
+.titulo-centrado {
   text-align: center;
-  text-shadow: 0 0 8px rgba(0,0,0,0.7);
-  padding: 2rem;
+  font-size: 2em;
+  margin-top: 1rem;
 }
 
-.hero-header h1 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-.hero-header p {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
+/* ----------------------------------------
+   REJILLA BÁSICA AUTOMÁTICA (NO USAR SI USAS COLUMNS)
+   → Si usas columnas balanceadas, esta sección puede eliminarse o quedar sin uso.
+---------------------------------------- */
 .layout-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -116,16 +40,68 @@ img {
   padding: 1rem;
 }
 
-/* Para pantallas grandes (escritorio) */
 @media (min-width: 768px) {
   .layout-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.centrado {
+/* ----------------------------------------
+   COLUMNAS BALANCEADAS (MULTICOLUMN LAYOUT)
+   → Distribuye el contenido verticalmente en dos columnas equilibradas.
+---------------------------------------- */
+.columnas-balanceadas {
+  column-count: 2;
+  column-gap: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .columnas-balanceadas {
+    column-count: 1;
+  }
+}
+
+/* ----------------------------------------
+   EVITAR QUE SE ROMPA UN BLOQUE ENTRE COLUMNAS
+   → Úsalo para encabezados con párrafos, imágenes con pie, etc.
+---------------------------------------- */
+.anti-quiebre {
+  break-inside: avoid;
+  page-break-inside: avoid; /* por compatibilidad */
+}
+
+/* ----------------------------------------
+   ESTILO DEL MENÚ (si existe un nav.njk con JS)
+---------------------------------------- */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* ----------------------------------------
+   PIE DE PÁGINA (FOOTER)
+---------------------------------------- */
+footer {
   text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 2rem 1rem;
+  background-color: #f5f5f5;
+  font-size: 0.9rem;
+}
+
+/* ----------------------------------------
+   CLASES OPCIONALES DE UTILIDAD
+---------------------------------------- */
+.full-width {
+  width: 100%;
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
