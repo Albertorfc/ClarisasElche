@@ -13,7 +13,7 @@ title: Contacto
 
 <p>
   📞 <strong>Teléfono:</strong> <a href="tel:+34966123456">966 123 456</a><br />
-  📧 <strong>Email:</strong> <a href="mailto:clarisaselche@gmail.com">clarisaselche@gmail.com</a>
+  📧 <strong>Email:</strong> <a href="mailto:clarisasdeelx@gmail.com">clarisaselche@gmail.com</a>
 </p>
 
 <h2>Horarios de Misa</h2>
@@ -41,11 +41,11 @@ title: Contacto
 <h2>Cómo llegar</h2>
 
 <p>
-  El monasterio está situado junto al cauce del río Vinalopó, cerca del Puente del <em>Bimil·lenari</em>. Se puede acceder en coche (hay aparcamiento).
+  El monasterio está situado junto al cauce del río Vinalopó, cerca del Puente del <em>Bimil·lenari</em>. Se puede acceder en coche (hay aparcamiento) y andando desde la Avenida del Alcalde Vicente Quiles, junto al Parque Infantil de Tráfico .
 </p>
 
 <p>
-  <a href="[https://maps.app.goo.gl/hyyDRgRB7y2bmyPCA]" target="_blank">📍 Ver en Google Maps</a>
+  <a href="https://maps.app.goo.gl/hyyDRgRB7y2bmyPCA" target="_blank">📍 Ver en Google Maps</a>
 </p>
 
 <h2>Mensaje fraterno</h2>
