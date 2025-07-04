@@ -108,3 +108,17 @@ img {
   margin: 0;
   font-size: 1.2rem;
 }
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Para pantallas grandes (escritorio) */
+@media (min-width: 768px) {
+  .layout-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
