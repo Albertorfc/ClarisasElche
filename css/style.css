@@ -84,3 +84,27 @@ img {
     flex-direction: row;
   }
 }
+
+.hero-header {
+  background: url('/imagenes/santa-clara-francisco.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+  padding: 2rem;
+}
+
+.hero-header h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.hero-header p {
+  margin: 0;
+  font-size: 1.2rem;
+}
