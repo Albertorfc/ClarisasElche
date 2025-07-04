@@ -4,7 +4,6 @@ title: Hermanas Clarisas de Elche
 ---
 
 <section class="row">
-  <div class="column">
   <h2 style="text-align: center;">¡Paz y bien!</h2>
     <img src="/imagenes/paz-y-bien-ocre.png" alt="Paz y Bien" style="margin-bottom: 2rem;"  />
     <p>
@@ -23,9 +22,7 @@ title: Hermanas Clarisas de Elche
       vivo hoy en comunidades que oran en silencio contemplativo por la Iglesia en todo el mundo.
     </p>
     <img src="/imagenes/simone-martini.jpg" alt="Santa Clara" />
-  </div>
 
-  <div class="column">
     <h2>Cruz de San Damián</h2>
     <p>
       Ante esta cruz, <strong>San Francisco</strong> escuchó la llamada del Señor: <em>Reconstruye mi Iglesia</em>.
@@ -48,5 +45,4 @@ title: Hermanas Clarisas de Elche
       tu santo y veraz mandamiento.<br />
       Amén.
     </p>
-  </div>
 </section>
