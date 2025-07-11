@@ -5,11 +5,17 @@ title: Hermanas Clarisas de Elche
 
 <h2 class="centrado">¡Paz y bien!</h2>
 
-<img src="/imagenes/paz-y-bien-ocre.png" alt="Paz y Bien" class="centrado" style="margin-bottom: 2rem;" />
+<div style="width: fit-content; margin: 0 auto 2rem auto; overflow: hidden; height: 66.66%;">
+  <img src="/imagenes/paz-y-bien-ocre.png" alt="Paz y Bien" style="display: block; object-fit: cover; object-position: top; height: auto; max-height: none; width: 100%;" />
+</div>
 
 <p>
   Bienvenidos a la página del monasterio de las Hermanas Clarisas de Elche, mujeres que siguen una vida
-  de oración y desprendimiento. Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo,
+  de oración y desprendimiento. 
+</p> 
+
+<p>
+  Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo,
   ofreciendo un espacio de paz y luz para quienes buscan a Dios en lo profundo del corazón.
 </p>
 
