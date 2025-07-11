@@ -66,13 +66,15 @@ title: Hermanas Pobres de Santa Clara
 <img src="/imagenes/altar-reliquias-clarisas.jpg" alt="Relicario clarisa" />
 <ul>
   <li><strong>Santa Inés de Praga:</strong> princesa bohemia que dejó el lujo por seguir a Cristo. Fundó el primer monasterio fuera de Italia. Clara la llamó su “hermana del alma”.</li>
-  <li><strong>Santa Coleta de Corbie:</strong> con una vida centrada en la <strong>Pasión de Cristo</strong> devolvió a la Orden su fuego original con su vida de penitencia.</li>
+  <a href="https://ofm.org/es/santa-ines-de-praga.html" target="_blank">Leer más</a>
   <li><strong>Santa Catalina de Bolonia:</strong> artista y mística, su amor a Cristo la hacía verlo en toda la creación.</li>
-  <li><strong>Santa Verónica Giuliani:</strong> marcada por los estigmas, amó a Jesús con pasión total.</li>
-  <li><strong>Beata María Ángeles de San José:</strong> clarisa española del siglo XX, mártir en 1936 durante la persecución religiosa.</li>
-</ul>
+<li><strong>Santa Verónica Giuliani:</strong> marcada por los estigmas, amó a Jesús con pasión total. 
+  <a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20101215.html" target="_blank">Leer más</a>
+<li><strong>Santa Eustaquia de Calafato:</strong> marcada por los estigmas, amó a Jesús con pasión total. 
+  <a href="https://www.franciscanos.org/santoral/eustaquia.htm" target="_blank">Leer más</a>
 
-<h2>¿Qué le dice una clarisa al mundo en el siglo XXI?</h2>
+
+<h2>¿Qué dice una clarisa al mundo en el siglo XXI?</h2>
 <p>
   La clarisa no habla al mundo con discursos, habla con su vida. Una vida que es ya un adelanto de la vida futura, en eterna contemplación del Amor, del único Amor, del amor que llena de verdad el corazón.
 En un mundo en el que sólo se valora lo que se posee, desde la clausura, la clarisa ama al mundo y al prójimo por lo que es, un fruto del Amor de Dios por los hombres.
