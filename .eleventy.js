@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("imagenes");
+  eleventyConfig.addPassthroughCopy("favicon.png"); // 👈 Añade esta línea
 
   return {
     dir: {
