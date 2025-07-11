@@ -4,6 +4,14 @@ title: Vocación Clarisa
 ---
 
 <section class="grid-vocacion">
+
+<article>
+  <h2>La Vocación de la Alegría</h2>
+  
+  <p>El inicio de la vocación tiene su raíz en la alegría por el <strong>encuentro con Jesucristo resucitado</strong>, y que se inicia con la consciencia de la llamada personal de Dios y la respuesta personal a <strong>vivir de la mano de Santa Clara</strong> el seguimiento de Aquél que es el Camino, la Verdad y la Vida. Las Clarisas buscan configurarse con Él, viviendo como Él vivió: sin posesiones, en obediencia amorosa, fraternidad y adoración continua.</p>
+</article>
+
+  
 <article>
   <h2>Seguimiento de Cristo Pobre y Crucificado</h2>
   <img src="/imagenes/seguimiento-cristo.png" alt="Seguimiento de Cristo Pobre y Crucificado" />
@@ -63,4 +71,11 @@ title: Vocación Clarisa
   <img src="/imagenes/testimonio-amor.png" alt="Testimonio de Amor y Esperanza" />
   <p>Aunque escondidas del mundo, su vida tiene una dimensión profundamente misionera. Son testigos del amor incondicional de Dios, del valor de lo eterno, y del poder transformador de la oración. Su existencia silenciosa y entregada es una semilla de esperanza para la humanidad, un testimonio de que Cristo vive y sigue llamando corazones a amarlo sin reservas.</p>
 </article>
+
+<article>
+  <h2>¡Conócenos!</h2>
+    <p>Si al leer estas palabras se ha revuelto tu corazón, en busca de Aquél que puede llenarlo, del único Amor, ¡ven a conocernos! El discernimiento vocacional es un camino que puede durar meses </p>
+</article>
+
+
 </section>
