@@ -6,6 +6,7 @@
   <title>{{ title }}</title>
   <link rel="icon" href="/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -58,6 +59,21 @@
   });
 </script>
 
+<!-- AOS Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+
+  // Aplica animaciones a todos los <p>, <h2> e <img> automáticamente
+  document.querySelectorAll('p, h2, img').forEach(el => {
+    if (!el.hasAttribute('data-aos')) {
+      el.setAttribute('data-aos', 'fade-up');
+    }
+  });
+</script>
 
 </body>
 </html>
