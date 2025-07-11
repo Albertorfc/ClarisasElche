@@ -5,8 +5,8 @@ title: Hermanas Clarisas de Elche
 
 <h2 class="centrado">¡Paz y bien!</h2>
 
-<div style="width: 100%; max-width: 600px; height: 300px; overflow: hidden; margin: 0 auto 2rem auto;">
-  <img src="/imagenes/paz-y-bien-ocre.png" alt="Paz y Bien" style="width: 100%; height: auto; margin-top: -100px;" />
+<div style="position: relative; width: 100%; max-width: 600px; height: 260px; overflow: hidden; margin: 0 auto 2rem auto; border-radius: 12px;">
+  <img src="/imagenes/paz-y-bien-ocre.png" alt="Paz y Bien" style="position: absolute; top: 0; left: 0; width: 100%;" />
 </div>
 
 <p>
