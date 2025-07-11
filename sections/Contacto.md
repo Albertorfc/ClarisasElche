@@ -35,7 +35,7 @@ title: Contacto
 <h2>Pedidos de dulces artesanos</h2>
 
 <p>
-  🧁 Puedes realizar encargos llamando al teléfono o escribiéndonos por <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank">@deliciasdesantaclaraelche</a> en Instagram.
+  🧁 Puedes realizar encargos llamando al teléfono o escribiéndonos por <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank">@DeliciasDeSantaClaraElche</a> en Instagram.
 </p>
 
 <h2>Cómo llegar</h2>
