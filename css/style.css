@@ -159,3 +159,13 @@ img {
   margin-bottom: 1rem;
   break-inside: avoid;
 }
+
+.frase-impacto {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  color: #6b4e2f;
+  margin: 2rem auto;
+  line-height: 1.4;
+}
