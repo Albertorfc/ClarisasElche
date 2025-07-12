@@ -14,6 +14,8 @@ title: Hermanas Clarisas de Elche
   de oración y desprendimiento. 
 </p> 
 
+<p class="frase-impacto">«El silencio nos abre a la luz de Dios»</p>
+
 <p>
   Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo,
   ofreciendo un espacio de paz y luz para quienes buscan a Dios en lo profundo del corazón.
