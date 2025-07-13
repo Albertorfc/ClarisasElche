@@ -35,7 +35,7 @@ title: Hermanas Clarisas de Elche
   vivo hoy en comunidades que oran en silencio contemplativo por la Iglesia en todo el mundo.
 </p>
 
-<a href="/santa-clara/" class="boton">Conocer más sobre Santa Clara</a>
+<a href="/sections/santa-clara/" class="boton">Conoce a Santa Clara</a>
 
 <h2>Cruz de San Damián</h2>
 
