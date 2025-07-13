@@ -3,18 +3,17 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("imagenes");
   eleventyConfig.addPassthroughCopy("favicon.png");
 
-  // 👇 AÑADIMOS LA COLECCIÓN DE NOTICIAS
   eleventyConfig.addCollection("noticias", function(collectionApi) {
     return collectionApi.getFilteredByGlob("sections/noticias/*.md")
-      .filter(item => item.inputPath !== 'sections/noticias/index.md'); // excluye la portada
+      .filter(item => !item.inputPath.includes("index.md"));
   });
 
   return {
     dir: {
-      input: ".",              // raíz del proyecto
-      includes: "_includes",   // includes y layouts
+      input: ".",
+      includes: "_includes",
       layouts: "_includes/layouts",
-      output: "_site"          // carpeta de salida de Netlify
+      output: "_site"
     }
   };
 };
