@@ -1,11 +1,20 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<article class="noticia-detalle">
-  <h2>{{ title }}</h2>
-  <p><em>{{ date | date("dd/MM/yyyy") }}</em></p>
-  <img src="{{ image }}" alt="{{ title }}">
-  <p class="excerpt">{{ excerpt }}</p>
-  <div>{{ content | safe }}</div>
-</article>
+<section class="seccion-actualidad">
+  <h2>Noticias del Convento</h2>
+  <div class="noticias-grid">
+    {% for post in collections.noticias | reverse %}
+      <article class="noticia" data-aos="fade-up">
+        <a href="{{ post.url }}">
+          <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+        </a>
+        <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <p><em>{{ post.date | date("dd/MM/yyyy") }}</em></p>
+        <p>{{ post.data.excerpt }}</p>
+        <a class="boton" href="{{ post.url }}">Leer más</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 {% endblock %}
