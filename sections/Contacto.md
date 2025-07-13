@@ -3,7 +3,7 @@ layout: base.njk
 title: Contacto
 ---
 
-<div class="layout-grid">
+<div class="columnas-balanceadas">
 
   <div>
     <h2>Visítanos</h2>
@@ -14,14 +14,7 @@ title: Contacto
     <p>
       <strong>Teléfono:</strong>
       <a href="tel:+34965452964" style="text-decoration: none; color: #6b4e2f;">
-        📞 965 452 964
-      </a>
-    </p>
-
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:clarisaselche@gmail.com" style="text-decoration: none; color: #6b4e2f;">
-        clarisaselche@gmail.com
+        <span style="font-size: 1.1rem;">📞 965 452 964</span>
       </a>
     </p>
   </div>
@@ -52,21 +45,23 @@ title: Contacto
     <p>
       El monasterio se encuentra junto al cauce del río Vinalopó, a las afueras de Elche, cerca del Puente del <em>Bimil·lenari</em>. Se puede llegar fácilmente en coche (con aparcamiento disponible) o caminando desde la Avenida del Alcalde Vicente Quiles, junto al Parque Infantil de Tráfico.
     </p>
-
-    <div style="margin-top: 1rem;">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.2392484469036!2d-0.702411824024124!3d38.2589019820944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63d9d4be2060ff%3A0x3eec7df1d18aa14c!2sMonasterio%20de%20Santa%20Clara!5e0!3m2!1ses!2ses!4v1720873582632" 
-        width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
   </div>
 
 </div>
 
-<!-- Separador visual -->
-<hr style="margin: 3rem 0; border: none; border-top: 1px solid #d9c8b3;">
+<!-- Mapa centrado -->
+<section style="margin: 3rem auto; max-width: 800px;">
+  <h2 style="text-align: center;">Mapa</h2>
+  <div>
+    <!-- Sustituye el src por el correcto que te da Google Maps -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=TU_ENLACE_AQUI"
+      width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
 
-<!-- Formulario de contacto -->
+<!-- Formulario -->
 <section>
   <h2 style="text-align: center;">Formulario de contacto</h2>
 
