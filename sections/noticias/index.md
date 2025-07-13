@@ -1,7 +1,8 @@
 ---
 title: Noticias
 layout: noticias.njk
-permalink: /noticias/index.html
+permalink: /noticias/
 ---
+
 
 Bienvenidos a la sección de noticias del convento.
