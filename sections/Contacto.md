@@ -37,7 +37,7 @@ title: Contacto
 
   <div>
     <h2>Pedidos de dulces</h2>
-    <p>Puedes realizar encargos llamando al teléfono o escribiéndonos por Instagram:</p>
+    <p>Puedes realizar encargos por teléfono o escribiéndonos por IG:</p>
     <p>
       <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank" class="boton">@DeliciasDeSantaClaraElche</a>
     </p>
@@ -49,8 +49,11 @@ title: Contacto
 <section style="margin: 3rem auto; max-width: 800px;">
   <h2 style="text-align: center;">Cómo llegar</h2>
   <p>
-    El monasterio se encuentra junto al cauce del río Vinalopó, a las afueras de Elche, cerca del Puente del <em>Bimil·lenari</em>. 
-    Se puede llegar fácilmente en coche (con aparcamiento disponible) o caminando desde la Avenida del Alcalde Vicente Quiles, junto al Parque Infantil de Tráfico.
+    El monasterio se encuentra junto al cauce del río Vinalopó, entre al Parque Infantil de Tráfico y el Puente del <em>Bimil·lenari</em>.
+  </p>
+  
+  <p>
+  Se puede llegar a pie desde la Avenida Alcalde Vicente Quiles (antiguamente del Ferrrocarril) o en coche, con aparcamiento disponible.
   </p>
 
   <div style="margin-top: 1.5rem;">
@@ -64,7 +67,9 @@ title: Contacto
 <!-- Formulario -->
 <section>
   <h2 style="text-align: center;">Formulario de contacto</h2>
-
+  <p>
+    <em> Todavía en pruebas (no disponible)</em>
+    </p>
   <form action="https://formspree.io/f/mnnzadll" method="POST" style="max-width: 600px; margin: 2rem auto; padding: 1rem;">
     <label for="nombre">Nombre</label><br />
     <input type="text" id="nombre" name="nombre" required style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"><br />
