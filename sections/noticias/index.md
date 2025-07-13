@@ -1,7 +1,7 @@
 ---
 title: Noticias
 layout: noticias.njk
-permalink: /noticias/
+permalink: /noticias/index.html
 ---
 
 
