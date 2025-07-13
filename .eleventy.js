@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.png");
 
   eleventyConfig.addCollection("noticias", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("sections/noticias/*.md")
+    return collectionApi.getFilteredByGlob("sections/noticias/**/*.md")
       .filter(item => !item.inputPath.includes("index.md"));
   });
 
