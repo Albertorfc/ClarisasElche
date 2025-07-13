@@ -55,7 +55,7 @@ title: Contacto
   <div>
     <!-- Sustituye el src por el correcto que te da Google Maps -->
     <iframe 
-      src="https://www.google.com/maps/embed?pb=TU_ENLACE_AQUI"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25056.707135351564!2d-0.7167974!3d38.2774438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b68b4afb1afd%3A0xa5e2bc87f4565da!2sConvento%20de%20Santa%20Clara%20(Clarisas)!5e0!3m2!1ses!2ses!4v1752429983050!5m2!1ses!2ses"      
       width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
