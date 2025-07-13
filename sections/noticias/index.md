@@ -1,6 +1,6 @@
 ---
 title: Noticias
-layout: layouts/noticias.njk
+layout: _includes/layouts/noticias.njk
 ---
 
 Bienvenidos a la sección de noticias del convento.
