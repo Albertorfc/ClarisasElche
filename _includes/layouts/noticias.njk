@@ -1,26 +1,24 @@
-
 {% extends "layouts/base.njk" %}
 
 {% block content %}
 <section class="seccion-actualidad">
-  <h2>Noticias recientes del Convento</h2>
+  <h2 class="titulo-seccion" style="margin-bottom: 1rem;">📰 Noticias recientes del Convento</h2>
 
-  {{ content | safe }}  {# Aquí se inyecta el contenido de index.md #}
+  <div class="noticias-intro" style="margin-bottom: 2rem;">
+    {{ content | safe }}
+  </div>
 
-{#
-<div class="noticias-grid">
-  {% for post in collections.noticias | reverse %}
-  <article class="noticia" data-aos="fade-up">
-    <a href="{{ post.url }}">
-      <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
-    </a>
-    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-    <p><em>{{ post.date | date("dd/MM/yyyy") }}</em></p>
-    <p>{{ post.data.excerpt }}</p>
-  </article>
-  {% endfor %}
-</div>
-#}
-
+  <div class="noticias-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+    {% for post in collections.noticias | reverse %}
+    <article class="noticia" style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;" data-aos="fade-up">
+      <a href="{{ post.url }}">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" style="width: 100%; height: auto; border-radius: 4px;">
+      </a>
+      <h3 style="margin-top: 0.5rem;"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      <p><em>{{ post.date | date }}</em></p>
+      <p>{{ post.data.excerpt }}</p>
+    </article>
+    {% endfor %}
+  </div>
 </section>
 {% endblock %}
