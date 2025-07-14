@@ -3,53 +3,93 @@ layout: base.njk
 title: Contacto
 ---
 
-<h2>Visítanos</h2>
+<div>
 
-<p>
-  <strong>Monasterio de Santa Clara de Elche</strong><br />
-  Camino del Pantano, s/n<br />
-  03202 Elche (Alicante), España
-</p>
+  <div>
+    <h2>Visítanos</h2>
+    <p><strong>Monasterio de Santa Clara de Elche</strong><br />
+    Camino del Pantano, s/n<br />
+    03202 Elche (Alicante), España</p>
 
-<p>
-  📞 <strong>Teléfono:</strong> <a href="tel:+34966123456">966 123 456</a><br />
-  📧 <strong>Email:</strong> <a href="mailto:clarisasdeelx@gmail.com">clarisaselche@gmail.com</a>
-</p>
+    <p>
+      <strong>Teléfono:</strong>
+      <a href="tel:+34965452964" style="text-decoration: none; color: #6b4e2f;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="width: 1em; height: 1em; fill: #6b4e2f; vertical-align: middle; margin-right: 4px;" viewBox="0 0 24 24">
+          <path d="M6.62 10.79a15.093 15.093 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.05 11.05 0 003.44.55 1 1 0 011 1v3.49a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1h3.5a1 1 0 011 1 11.05 11.05 0 00.55 3.44 1 1 0 01-.21 1.11l-2.2 2.2z"/>
+        </svg>
+        965 452 964
+      </a>
+    </p>
+  </div>
 
-<h2>Horarios de Misa</h2>
+  <div>
+    <h2>Horarios de Misa</h2>
+    <p><strong>Lunes a sábado:</strong> 8:00 h<br />
+    <strong>Domingos y festivos:</strong> 11:00 h</p>
 
-<p>
-  🕊 <strong>Lunes a sábado:</strong> 8:00 h<br />
-  ✝ <strong>Domingos y festivos:</strong> 11:00 h
-</p>
+    <h2>Visitas en el torno</h2>
+    <p>
+      Lunes a viernes: 10:00 – 13:00 y 17:00 – 18:30<br />
+      Sábados: 10:00 – 12:30<br />
+      <em>(Domingos y festivos no se atiende)</em>
+    </p>
+  </div>
 
-<h2>Horarios de visita</h2>
+  <div>
+    <h2>Pedidos de dulces</h2>
+    <p>Puedes realizar encargos por teléfono o escribiéndonos por IG:</p>
+    <p>
+      <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank" class="boton">@DeliciasDeSantaClaraElche</a>
+    </p>
+  </div>
 
-<p>
-  🪟 <strong>Visitas en el torno:</strong><br />
-  Lunes a viernes: 10:00 a 13:00 y 17:00 a 18:30<br />
-  Sábados: 10:00 a 12:30<br />
-  <em>(Domingos y festivos no se atiende)</em>
-</p>
+</div>
 
-<h2>Pedidos de dulces artesanos</h2>
+<!-- Sección Cómo llegar (fusionada con mapa) -->
+<section style="margin: 3rem auto; max-width: 800px;">
+  <h2 style="text-align: center;">Cómo llegar</h2>
+  <p>
+    El monasterio se encuentra junto al cauce del río Vinalopó, entre al Parque Infantil de Tráfico y el Puente del <em>Bimil·lenari</em>.
+  </p>
+  
+  <p>
+  Se puede llegar a pie desde la Avenida Alcalde Vicente Quiles (antiguamente del Ferrrocarril) o en coche, con aparcamiento disponible.
+  </p>
 
-<p>
-  🧁 Puedes realizar encargos llamando al teléfono o escribiéndonos por <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank">@DeliciasDeSantaClaraElche</a> en Instagram.
-</p>
+  <div style="margin-top: 1.5rem;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25056.707135351564!2d-0.7167974!3d38.2774438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b68b4afb1afd%3A0xa5e2bc87f4565da!2sConvento%20de%20Santa%20Clara%20(Clarisas)!5e0!3m2!1ses!2ses!4v1752429983050!5m2!1ses!2ses"
+      width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
 
-<h2>Cómo llegar</h2>
+<!-- Formulario -->
+<section>
+  <h2 style="text-align: center;">Formulario de contacto</h2>
+  <p>
+    <em> Todavía en pruebas (no disponible)</em>
+    </p>
+  <form action="https://formspree.io/f/mnnzadll" method="POST" style="max-width: 600px; margin: 2rem auto; padding: 1rem;">
+    <label for="nombre">Nombre</label><br />
+    <input type="text" id="nombre" name="nombre" required style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"><br />
 
-<p>
-  El monasterio está situado junto al cauce del río Vinalopó, cerca del Puente del <em>Bimil·lenari</em>. Se puede acceder en coche (hay aparcamiento) y andando desde la Avenida del Alcalde Vicente Quiles, junto al Parque Infantil de Tráfico .
-</p>
+    <label for="email">Correo electrónico</label><br />
+    <input type="email" id="email" name="email" required style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"><br />
 
-<p>
-  <a href="https://maps.app.goo.gl/hyyDRgRB7y2bmyPCA" target="_blank">📍 Ver en Google Maps</a>
-</p>
+    <label for="mensaje">Mensaje</label><br />
+    <textarea id="mensaje" name="mensaje" rows="6" required style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea><br />
 
-<h2>Mensaje fraterno</h2>
+    <button type="submit" class="boton">Enviar mensaje</button>
+  </form>
+</section>
 
-<p>
-  Gracias por tu interés en nuestra comunidad. Desde la clausura, oramos por todos los que nos visitan, escriben o llaman. Que el Señor te colme de paz y bendiciones.
-</p>
+<!-- Bendición -->
+<section style="margin-top: 4rem;">
+  <h2 style="text-align: center;">Bendición de Santa Clara</h2>
+  <p class="frase-impacto">
+    El Señor os bendiga y os guarde. <br />
+    Os muestre su faz y tenga misericordia de vosotras. <br />
+    Vuelva su rostro a vosotras y os dé la paz.
+  </p>
+</secti

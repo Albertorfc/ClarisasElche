@@ -10,28 +10,32 @@ title: Hermanas Clarisas de Elche
 </div>
 
 <p>
-  Bienvenidos a la página del monasterio de las Hermanas Clarisas de Elche, mujeres que siguen una vida
-  de oración y desprendimiento. 
+  Os dan la bienvenida las Hermanas Pobres de Santa Clara. El Señor vuelva su rostro a vosotras y os dé la paz.
 </p> 
 
+<p class="frase-impacto">«Qué negocio tan grande y loable: dejar las cosas temporales por las eternas.»</p>
+
 <p>
-  Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo,
-  ofreciendo un espacio de paz y luz para quienes buscan a Dios en lo profundo del corazón.
+  Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo, ofreciendo un espacio de paz y luz para quienes buscan a Dios en lo profundo del corazón.
 </p>
 
 <h2>Santa Clara de Asís</h2>
 
 <p>
-  Fundadora de la <strong>Orden de las Hermanas Pobres</strong> —las <em>Clarisas</em>—, vivió en el pequeño
+  Fundó con <strong>San Francisco</strong> la <strong>Orden de las Damas Pobres</strong> —las <em>Clarisas</em>—, desde el 
   monasterio de San Damián, donde su vida escondida fue luz para toda la Iglesia.
 </p>
+
+<img src="/imagenes/simone-martini.jpg" alt="Santa Clara" />
+
+<p class="frase-impacto">«Sed siempre amantes de Dios y de vuestras almas y de todas vuestras hermanas»</p>
 
 <p>
   Su entrega radical y su amor por la Eucaristía siguen siendo ejemplo de seguimiento de Cristo. Su carisma sigue
   vivo hoy en comunidades que oran en silencio contemplativo por la Iglesia en todo el mundo.
 </p>
 
-<img src="/imagenes/simone-martini.jpg" alt="Santa Clara" />
+<a href="/sections/santa-clara/" class="boton">Conoce a Santa Clara</a>
 
 <h2>Cruz de San Damián</h2>
 

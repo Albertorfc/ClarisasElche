@@ -1,0 +1,23 @@
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<section class="seccion-actualidad">
+  <h2>Noticias recientes del Convento</h2>
+
+  {{ content | safe }}  {# Aquí se inyecta el contenido de index.md #}
+
+  <div class="noticias-grid">
+    {% for post in collections.noticias | reverse %}
+    <article class="noticia" data-aos="fade-up">
+      <a href="{{ post.url }}">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+      </a>
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      <p><em>{{ post.date | date("dd/MM/yyyy") }}</em></p>
+      <p>{{ post.data.excerpt }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

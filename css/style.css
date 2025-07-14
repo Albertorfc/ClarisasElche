@@ -159,3 +159,76 @@ img {
   margin-bottom: 1rem;
   break-inside: avoid;
 }
+
+.frase-impacto {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  color: #6b4e2f;
+  margin: 2rem auto;
+  line-height: 1.4;
+}
+
+h2 {
+  color: #6b4e2f; /* Marrón cálido */
+}
+
+.boton {
+  display: inline-block;
+  background-color: #6b4e2f;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #8b5e3c;
+}
+
+.seccion-actualidad {
+  margin: 4rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.noticias-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .noticias-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .noticias-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.noticia {
+  background-color: #fffaf3;
+  border: 1px solid #d9c8b3;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.noticia:hover {
+  transform: translateY(-5px);
+}
+.noticia img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.noticia h3 {
+  color: #6b4e2f;
+}
