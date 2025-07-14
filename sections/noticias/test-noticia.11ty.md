@@ -7,4 +7,4 @@ excerpt: Este es un resumen
 permalink: /seccion-test-noticia/
 ---
 
-Este es el contenido del test-noticia.md
+Este es el contenido del  test-noticia.md
