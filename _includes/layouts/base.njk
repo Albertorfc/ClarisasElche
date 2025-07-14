@@ -30,9 +30,9 @@
 
   <!-- Contenido de cada página -->
   <main>
-  <div class="columnas-balanceadas">
-    {{ content | safe }}
-  </div>
+    <div class="columnas-balanceadas">
+      {% block content %}{% endblock %}
+    </div>
   </main>
 
   <!-- Footer común -->
@@ -58,27 +58,26 @@
       });
     }
   });
-</script>
+  </script>
 
-<!-- AOS Scripts -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Asignar data-aos antes de inicializar AOS
-    document.querySelectorAll('p, h2, img').forEach(el => {
-      if (!el.hasAttribute('data-aos')) {
-        el.setAttribute('data-aos', 'fade-up');
-      }
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Asignar data-aos antes de inicializar AOS
+      document.querySelectorAll('p, h2, img').forEach(el => {
+        if (!el.hasAttribute('data-aos')) {
+          el.setAttribute('data-aos', 'fade-up');
+        }
+      });
+
+      // Inicializar AOS una vez añadidos los atributos
+      AOS.init({
+        duration: 800,
+        once: true
+      });
     });
-
-    // Inicializar AOS una vez añadidos los atributos
-    AOS.init({
-      duration: 800,
-      once: true
-    });
-  });
-</script>
-
+  </script>
 
 </body>
 </html>
