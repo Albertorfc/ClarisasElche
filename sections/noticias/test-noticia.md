@@ -1,4 +1,3 @@
-
 ---
 title: Test con layout noticia
 layout: noticia.njk
