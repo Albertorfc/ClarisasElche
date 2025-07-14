@@ -1,13 +1,10 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<p style="background: red; color: white;">🧪 USANDO noticia-layout.njk</p>
-
-<article class="noticia-detalle">
-  <h2>{{ title }}</h2>
-  <p><em>{{ date | date("dd/MM/yyyy") }}</em></p>
-  <img src="{{ image }}" alt="{{ title }}">
-  <p class="excerpt">{{ excerpt }}</p>
-  <div>{{ content | safe }}</div>
-</article>
+<p style="background: red; color: white;">✅ LAYOUT APLICADO</p>
+<p>Title: {{ title }}</p>
+<p>Date: {{ date }}</p>
+<p>Excerpt: {{ excerpt }}</p>
+<p>Image: {{ image }}</p>
+<p>{{ content | safe }}</p>
 {% endblock %}
