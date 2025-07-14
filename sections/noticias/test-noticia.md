@@ -3,7 +3,7 @@
 title: Test con layout noticia
 layout: noticia.njk
 date: 2025-07-14
-image: /imagenes/test.jpg
+image: /imagenes/clara.jpg
 excerpt: Este es un resumen
 ---
 
