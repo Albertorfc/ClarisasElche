@@ -315,3 +315,26 @@ h2 {
   font-size: 1.05rem;
   color: #333;
 }
+
+/* Botón volver a noticias */
+.boton-volver {
+  margin-top: 2rem;
+  background-color: #6b4e2f;
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.boton-volver:hover {
+  background-color: #8b5e3c;
+}
+
+/* Sección de sugerencias de otras noticias */
+.otras-noticias {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e6dccc;
+}
