@@ -1,13 +1,27 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<p style="background: yellow; color: black;">✅ LAYOUT NOTICIA.NJK CARGADO</p>
+<article class="noticia-detalle" data-aos="fade-up">
 
-<article class="noticia-detalle">
-  <h2>{{ title }}</h2>
-  <em>{{ date | readableDate }}</em>
-  <img src="{{ image }}" alt="{{ title }}">
-  <p class="excerpt">{{ excerpt }}</p>
-  <div>{{ content | safe }}</div>
+  <h2 class="noticia-detalle-titulo centrado">{{ title }}</h2>
+
+  <p class="noticia-detalle-fecha centrado">
+    <em>{{ date | readableDate }}</em>
+  </p>
+
+  {% if image %}
+    <img src="{{ image }}" alt="{{ title }}" class="noticia-detalle-imagen">
+  {% endif %}
+
+  {% if excerpt %}
+    <p class="noticia-detalle-excerpt centrado">
+      {{ excerpt }}
+    </p>
+  {% endif %}
+
+  <div class="noticia-detalle-cuerpo">
+    {{ content | safe }}
+  </div>
+
 </article>
 {% endblock %}
