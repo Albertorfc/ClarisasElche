@@ -2,14 +2,19 @@
 
 {% block content %}
 <section class="seccion-actualidad">
-  <h2 class="titulo-seccion" style="margin-bottom: 1rem;">Noticias recientes del Monasterioo</h2>
+  {# TÍTULO OPCIONAL: centra o elimina según necesidad #}
+  <h2 class="titulo-seccion" style="margin-bottom: 1rem; text-align: center;">
+    Noticias recientes del Monasterio
+  </h2>
 
+  {# TEXTO DE INTRODUCCIÓN #}
   <div class="noticias-intro" style="margin-bottom: 2rem;">
     {{ content | safe }}
   </div>
 
+  {# LISTADO DE NOTICIAS - excluye la actual #}
   <div class="noticias-grid">
-    {% for post in collections.noticias | reverse %}
+    {% for post in collections.noticias | reverse if post.url !== page.url %}
     <article class="noticia" data-aos="fade-up">
       <a href="{{ post.url }}" class="noticia-imagen-link">
         <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
