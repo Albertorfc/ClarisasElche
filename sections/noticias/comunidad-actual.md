@@ -2,7 +2,7 @@
 title: Comunidad actual de Santa Clara
 layout: noticia.njk
 date: 2024-03-20
-image: /imagenes/noticias/comunidad-actual.jpg
+image: /imagenes/comunidad-actual.jpg
 excerpt: La comunidad actual de hermanas Clarisas continúa su misión desde el corazón del convento.
 ---
 
