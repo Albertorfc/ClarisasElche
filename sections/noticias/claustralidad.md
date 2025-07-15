@@ -2,7 +2,7 @@
 title: Inauguración de la nueva iglesia
 layout: noticia.njk
 date: 2007-11-01
-image: /imagenes/20071101.png
+image: /imagenes/20071101.jpg
 excerpt: El Sr. Obispo D. Rafael Palmero Ramos dedica la nueva iglesia del Monasterio
 ---
 
