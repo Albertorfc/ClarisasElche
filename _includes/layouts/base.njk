@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- Cabecera  común -->
+  <!-- Cabecera común -->
   <header class="hero-header">
     <div class="hero-text">
       <h1>Hermanas Pobres de Santa Clara</h1>
@@ -31,7 +31,9 @@
   <!-- Contenido de cada página -->
   <main>
     <div class="columnas-balanceadas">
-      {% block content %}{% endblock %}
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
     </div>
   </main>
 
@@ -64,14 +66,12 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Asignar data-aos antes de inicializar AOS
       document.querySelectorAll('p, h2, img').forEach(el => {
         if (!el.hasAttribute('data-aos')) {
           el.setAttribute('data-aos', 'fade-up');
         }
       });
 
-      // Inicializar AOS una vez añadidos los atributos
       AOS.init({
         duration: 800,
         once: true
@@ -81,3 +81,4 @@
 
 </body>
 </html>
+
