@@ -23,5 +23,33 @@
     {{ content | safe }}
   </div>
 
+  <!-- Botón de regreso -->
+  <div class="volver-noticias centrado">
+    <a href="/noticias/" class="boton boton-volver">⬅ Volver a Noticias</a>
+  </div>
+
 </article>
+
+<!-- Sección de noticias relacionadas -->
+{% set otrasNoticias = collections.noticias | reverse | rejectattr("url", "equalto", page.url) | slice(0, 2) %}
+{% if otrasNoticias.length %}
+<section class="otras-noticias" data-aos="fade-up">
+  <h3 class="centrado" style="margin-top: 3rem;">También te puede interesar</h3>
+  <div class="noticias-grid">
+    {% for post in otrasNoticias %}
+    <article class="noticia">
+      <a href="{{ post.url }}" class="noticia-imagen-link">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+      </a>
+      <div class="noticia-contenido">
+        <h4 class="noticia-titulo"><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+        <p class="noticia-fecha"><em>{{ post.date | readableDate }}</em></p>
+        <p class="noticia-extracto">{{ post.data.excerpt }}</p>
+        <a href="{{ post.url }}" class="boton boton-lectura">Leer más</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 {% endblock %}
