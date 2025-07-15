@@ -99,7 +99,6 @@ img {
   padding: 2rem;
 }
 
-/* 👇 NUEVO: Ajuste solo para sobremesa */
 @media (min-width: 768px) {
   .hero-header {
     background-position: center 30%;
@@ -123,7 +122,6 @@ img {
   padding: 1rem;
 }
 
-/* Para pantallas grandes (escritorio) */
 @media (min-width: 768px) {
   .layout-grid {
     grid-template-columns: 1fr 1fr;
@@ -171,7 +169,7 @@ img {
 }
 
 h2 {
-  color: #6b4e2f; /* Marrón cálido */
+  color: #6b4e2f;
 }
 
 .boton {
@@ -213,22 +211,62 @@ h2 {
   }
 }
 
+/* NUEVO: Estilos para noticias más profesionales */
 .noticia {
-  background-color: #fffaf3;
-  border: 1px solid #d9c8b3;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #e6dccc;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
 }
 .noticia:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
-.noticia img {
+
+.noticia-imagen-link img {
+  border-radius: 0;
+  height: 200px;
+  object-fit: cover;
   width: 100%;
-  border-radius: 8px;
+}
+
+.noticia-contenido {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.noticia-titulo {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  color: #6b4e2f;
+}
+
+.noticia-fecha {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.75rem;
+}
+
+.noticia-extracto {
+  flex-grow: 1;
   margin-bottom: 1rem;
 }
-.noticia h3 {
-  color: #6b4e2f;
+
+.boton-lectura {
+  align-self: flex-start;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background-color: #a08966;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.boton-lectura:hover {
+  background-color: #6b4e2f;
 }
