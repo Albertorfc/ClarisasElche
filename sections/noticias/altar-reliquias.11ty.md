@@ -2,7 +2,7 @@
 title: Bendición del altar con reliquias
 layout: noticia.njk
 date: 2023-10-04
-image: /imagenes/noticias/altar-reliquias-clarisas.jpg
+image: /imagenes/altar-reliquias-clarisas.jpg
 excerpt: En el día de San Francisco, se bendijo el nuevo altar que guarda reliquias de santos franciscanos.
 ---
 
