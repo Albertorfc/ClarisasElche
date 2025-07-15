@@ -1,9 +1,9 @@
 ---
-title: Reflexión sobre la vida claustral
+title: Inauguración de la nueva iglesia
 layout: noticia.njk
-date: 2024-01-15
-image: /imagenes/clausura-papal.png
-excerpt: La clausura papal, lejos de ser encierro, es apertura al mundo a través de la oración y la contemplación.
+date: 2007-11-01
+image: /imagenes/20071101.png
+excerpt: El Sr. Obispo D. Rafael Palmero Ramos dedica la nueva iglesia del Monasterio
 ---
 
-La vida de clausura no es aislamiento, sino comunión universal desde el silencio fecundo del convento. La obediencia, la pobreza y la oración son nuestra manera de abrazar al mundo. 
+El día 1 de noviembre del año 2007, el Excelentísimo y Reverendísimo señor Obispo de Orihuela-Alicante don Rafael Palmero Ramos, dedicó con rito solemne esta iglesia en honor a la Inmaculada Concepción de la Virgen María, a tenor del canon 1217 del Código de Derecho Canónico.
