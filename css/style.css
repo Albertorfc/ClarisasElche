@@ -67,6 +67,12 @@ main {
 img {
   max-width: 100%;
   border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  break-inside: avoid;
 }
 
 .row {
@@ -95,7 +101,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
   padding: 2rem;
 }
 
@@ -147,17 +153,6 @@ img {
   }
 }
 
-img {
-  max-width: 100%;
-  border-radius: 12px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  break-inside: avoid;
-}
-
 .frase-impacto {
   font-family: 'Great Vibes', cursive;
   font-size: 2.5rem;
@@ -195,23 +190,20 @@ h2 {
   padding: 0 1rem;
 }
 
+/* ACTUALIZADO: Mejoras para la sección de noticias */
 .noticias-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+
 @media (min-width: 768px) {
   .noticias-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 1024px) {
-  .noticias-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
-/* NUEVO: Estilos para noticias más profesionales */
+/* Estilo profesional para tarjetas de noticias */
 .noticia {
   background-color: #fff;
   border: 1px solid #e6dccc;
@@ -221,6 +213,7 @@ h2 {
   flex-direction: column;
   transition: box-shadow 0.3s ease;
 }
+
 .noticia:hover {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
@@ -245,6 +238,15 @@ h2 {
   color: #6b4e2f;
 }
 
+.noticia-titulo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.noticia-titulo a:hover {
+  text-decoration: underline;
+}
+
 .noticia-fecha {
   font-size: 0.9rem;
   color: #999;
@@ -267,6 +269,7 @@ h2 {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+
 .boton-lectura:hover {
   background-color: #6b4e2f;
 }
