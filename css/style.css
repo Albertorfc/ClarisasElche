@@ -190,7 +190,7 @@ h2 {
   padding: 0 1rem;
 }
 
-/* ACTUALIZADO: Mejoras para la sección de noticias */
+/* NOTICIAS LISTADO */
 .noticias-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -203,7 +203,6 @@ h2 {
   }
 }
 
-/* Estilo profesional para tarjetas de noticias */
 .noticia {
   background-color: #fff;
   border: 1px solid #e6dccc;
@@ -272,4 +271,47 @@ h2 {
 
 .boton-lectura:hover {
   background-color: #6b4e2f;
+}
+
+/* NOTICIA INDIVIDUAL */
+.noticia-detalle {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.noticia-detalle-titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #6b4e2f;
+}
+
+.noticia-detalle-fecha {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.noticia-detalle-imagen {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.noticia-detalle-excerpt {
+  font-style: italic;
+  color: #5f4a35;
+  background-color: #f2ebe2;
+  padding: 1rem;
+  border-left: 4px solid #d4c1a5;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 650px;
+}
+
+.noticia-detalle-cuerpo {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
 }
