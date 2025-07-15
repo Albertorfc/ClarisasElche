@@ -17,7 +17,7 @@ header, footer {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  margin-top: 0; /* eliminar separación con cabecera */
+  margin-top: 0;
 }
 
 .nav-links {
@@ -317,7 +317,6 @@ h2 {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  line-height: 0;
 }
 
 .hero-img {
@@ -356,11 +355,13 @@ h2 {
 .hero-texto h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
+  line-height: 1.2;
 }
 
 .hero-texto p {
   font-size: 1.2rem;
   margin: 0.3rem 0;
+  line-height: 1.4;
 }
 
 img.hero-img {
