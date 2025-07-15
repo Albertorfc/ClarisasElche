@@ -67,6 +67,12 @@ main {
 img {
   max-width: 100%;
   border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  break-inside: avoid;
 }
 
 .row {
@@ -95,11 +101,10 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
   padding: 2rem;
 }
 
-/* 👇 NUEVO: Ajuste solo para sobremesa */
 @media (min-width: 768px) {
   .hero-header {
     background-position: center 30%;
@@ -123,7 +128,6 @@ img {
   padding: 1rem;
 }
 
-/* Para pantallas grandes (escritorio) */
 @media (min-width: 768px) {
   .layout-grid {
     grid-template-columns: 1fr 1fr;
@@ -149,17 +153,6 @@ img {
   }
 }
 
-img {
-  max-width: 100%;
-  border-radius: 12px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  break-inside: avoid;
-}
-
 .frase-impacto {
   font-family: 'Great Vibes', cursive;
   font-size: 2.5rem;
@@ -171,7 +164,7 @@ img {
 }
 
 h2 {
-  color: #6b4e2f; /* Marrón cálido */
+  color: #6b4e2f;
 }
 
 .boton {
@@ -197,38 +190,151 @@ h2 {
   padding: 0 1rem;
 }
 
+/* NOTICIAS LISTADO */
 .noticias-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+
 @media (min-width: 768px) {
   .noticias-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 1024px) {
-  .noticias-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 .noticia {
-  background-color: #fffaf3;
-  border: 1px solid #d9c8b3;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #e6dccc;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
 }
+
 .noticia:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
-.noticia img {
+
+.noticia-imagen-link img {
+  border-radius: 0;
+  height: 200px;
+  object-fit: cover;
   width: 100%;
-  border-radius: 8px;
+}
+
+.noticia-contenido {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.noticia-titulo {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  color: #6b4e2f;
+}
+
+.noticia-titulo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.noticia-titulo a:hover {
+  text-decoration: underline;
+}
+
+.noticia-fecha {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.75rem;
+}
+
+.noticia-extracto {
+  flex-grow: 1;
   margin-bottom: 1rem;
 }
-.noticia h3 {
+
+.boton-lectura {
+  align-self: flex-start;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background-color: #a08966;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-lectura:hover {
+  background-color: #6b4e2f;
+}
+
+/* NOTICIA INDIVIDUAL */
+.noticia-detalle {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.noticia-detalle-titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
   color: #6b4e2f;
+}
+
+.noticia-detalle-fecha {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.noticia-detalle-imagen {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.noticia-detalle-excerpt {
+  font-style: italic;
+  color: #5f4a35;
+  background-color: #f2ebe2;
+  padding: 1rem;
+  border-left: 4px solid #d4c1a5;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 650px;
+}
+
+.noticia-detalle-cuerpo {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* Botón volver a noticias */
+.boton-volver {
+  margin-top: 2rem;
+  background-color: #6b4e2f;
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.boton-volver:hover {
+  background-color: #8b5e3c;
+}
+
+/* Sección de sugerencias de otras noticias */
+.otras-noticias {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e6dccc;
 }
