@@ -17,6 +17,7 @@ header, footer {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
+  margin-top: 0; /* eliminar separación con cabecera */
 }
 
 .nav-links {
@@ -310,21 +311,33 @@ h2 {
   border-top: 1px solid #e6dccc;
 }
 
-/* Ajustes específicos para la imagen de cabecera */
+/* CABECERA CON IMAGEN MEJORADA */
 .hero-header {
   position: relative;
-  text-align: center;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin: 0;
   padding: 0;
+  line-height: 0;
 }
 
 .hero-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
   display: block;
   border-radius: 0 !important;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .hero-header {
+    height: 300px;
+  }
+
+  .hero-img {
+    height: 100%;
+  }
 }
 
 .hero-texto {
@@ -332,9 +345,12 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
   color: white;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .hero-texto h1 {
@@ -347,7 +363,6 @@ h2 {
   margin: 0.3rem 0;
 }
 
-/* Corrección global: no aplicar border-radius a imágenes de cabecera */
 img.hero-img {
   border-radius: 0 !important;
 }
