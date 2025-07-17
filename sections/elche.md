@@ -24,10 +24,12 @@ title: Historia de las Clarisas en Elche
 </p>
 
 <p>
-  El edificio contaba con iglesia propia, que fue muy frecuentada por los fieles. Lamentablemente, esta iglesia fue quemada en febrero de 1936, durante disturbios previos al inicio de la Guerra Civil.
+  El edificio contaba con iglesia propia, que fue muy frecuentada por los fieles. Lamentablemente, esta iglesia fue incendiada en febrero de 1936, al final del régimen republicano radical previo a la Guerra Civil.
 </p>
 
 <img src="/imagenes/convento-merced-2.jpg" alt="Interior del convento de la Merced" />
+
+<p></p>
 
 <h2>Actual convento de Santa Clara</h2>
 
@@ -44,7 +46,7 @@ title: Historia de las Clarisas en Elche
 <h2>La comunidad hoy</h2>
 
 <p>
-  Actualmente, la comunidad de clarisas continúa su vida de oración, silencio, adoración eucarística y fraternidad. En contacto con la ciudad, acogen a quienes se acercan con necesidades espirituales. Su presencia sigue siendo testimonio de vida evangélica en Elche.
+  La comunidad de clarisas continúa su vida de oración, silencio, adoración eucarística y fraternidad. En contacto con la ciudad, acogen a quienes se acercan con necesidades espirituales. Su presencia sigue siendo testimonio de vida evangélica en Elche.
 </p>
 
 <img src="/imagenes/comunidad-actual.jpg" alt="Comunidad actual de Clarisas en Elche" />
