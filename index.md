@@ -16,7 +16,7 @@ title: Hermanas Clarisas de Elche
 <p class="frase-impacto">«Qué negocio tan grande y loable: dejar las cosas temporales por las eternas.»</p>
 
 <p>
-  Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo, ofreciendo un espacio de paz y luz para quienes buscan a Dios en lo profundo del corazón.
+  Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo, ofreciendo un espacio de paz a quienes buscan a Dios.
 </p>
 <p></p>
 
@@ -32,8 +32,8 @@ title: Hermanas Clarisas de Elche
 <p class="frase-impacto">«Sed siempre amantes de Dios y de vuestras almas y de todas vuestras hermanas»</p>
 
 <p>
-  Su entrega radical y su amor por la Eucaristía siguen siendo ejemplo de seguimiento de Cristo. Su carisma sigue
-  vivo hoy en comunidades que oran en silencio contemplativo por la Iglesia en todo el mundo.
+  Su entrega fue radical y su amor por la Eucaristía sigue siendo ejemplo de seguimiento de Cristo. Su carisma sigue
+  vivo hoy en comunidades de Clarisas que oran bajo su intercesión en todo el mundo.
 </p>
 
 <a href="/sections/santa-clara/" class="boton">Conoce a Santa Clara</a>
