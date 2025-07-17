@@ -18,6 +18,7 @@ title: Hermanas Clarisas de Elche
 <p>
   Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo, ofreciendo un espacio de paz y luz para quienes buscan a Dios en lo profundo del corazón.
 </p>
+<p></p>
 
 <h2>Santa Clara de Asís</h2>
 
@@ -37,6 +38,8 @@ title: Hermanas Clarisas de Elche
 
 <a href="/sections/santa-clara/" class="boton">Conoce a Santa Clara</a>
 
+<p></p>
+
 <h2>Cruz de San Damián</h2>
 
 <p>
@@ -44,12 +47,11 @@ title: Hermanas Clarisas de Elche
 </p>
 
 <p>
-  <strong>Santa Clara</strong> rezó muchas veces ante esta imagen, que todavía se conserva en el primer Convento
-  de las <em>Hermanas Pobres de Santa Clara</em> a las afueras de la ciudad de Asís.
+  <strong>Santa Clara</strong> rezó muchas veces ante esta imagen, que todavía se conserva en el primer Convento, en Asís.
 </p>
 
 <p>
-  La Cruz de San Damián representa a <strong>Cristo Triunfante</strong>, signo de su victoria sobre la muerte y de su resurrección.
+  La Cruz representa el acto mayor de amor de <strong>Cristo</strong>, signo de su victoria sobre la muerte y de su resurrección.
 </p>
 
 <img src="/imagenes/cruz-san-damian.gif" alt="Cruz de San Damián" />
