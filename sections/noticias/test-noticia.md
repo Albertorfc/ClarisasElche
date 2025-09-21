@@ -1,9 +1,9 @@
 ---
-title: Test con layout noticia
+title: Nueva página web
 layout: noticia.njk
-date: 2023-06-10
+date: 2025-10-15
 image: /imagenes/noticias/20250811.png
-excerpt: Este es un resumen
+excerpt: Nueva página web Clarisas Elche
 ---
 
-Este es el contenido del test-noticia.md
+Las Hermanas Clarisas inauguran una nueva página web para, desde la clausura, abrirse a la comunidad, a la ciudad de Elche y al mundo.
