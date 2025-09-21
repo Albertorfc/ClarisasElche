@@ -2,7 +2,7 @@
 title: Fiesta de Santa Clara
 layout: noticia.njk
 date: 2025-08-11
-image: imagenes/noticias/20250811_182548.jpg
+image: /imagenes/noticias/20250811_182548.jpg
 excerpt: En la Fiesta de Santa Clara de Asís, nuestro señor obispo don José Ignacio Munilla, ofició la Santa Misa.
 ---
 
