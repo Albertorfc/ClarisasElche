@@ -6,11 +6,11 @@ image: /imagenes/noticias/20071101.jpg
 excerpt: El Sr. Obispo D. Rafael Palmero Ramos dedica la nueva iglesia del Monasterio
 ---
 
-<p class="frase-impacto">«¡EL SEÑOR HA ESTADO GRANDE CON NOSOTRAS Y ESTAMOS ALEGRES!»</p>
+<p class="frase-impacto">«¡El Señor ha estado grando con nosotras y estamos alegres!»</p>
 
 Es para nuestra comunidad de Clarisas ilicitanas motivo de gritos de júbilo y de cantos de alabanza al Señor, porque es Él quien con su gracia y amor nos ha precedido en la construcción de esta nueva casa de oración. Como dice el Salmista: **«Si el Señor no construye la casa, en vano se cansan los albañiles»**.
 
-El 29 de septiembre de 2007 fue una fecha memorable para nuestra Comunidad, ya que dábamos inicio a una nueva etapa en la vida del Monasterio. Durante más de siglo y medio permanecimos en el Convento de Nuestra Señora de la Merced. Con una solemne Eucaristía presidida por el Vicario General Rvdo. D. Francisco Conesa Ferrer y concelebrada por siete sacerdotes, una multitud de fieles abarrotó nuestro pequeño templo para acompañarnos en la emotiva despedida del antiguo Monasterio de la Merced.  
+El **29 de septiembre de 2007** fue una fecha memorable para nuestra Comunidad, ya que dábamos inicio a una **nueva etapa en la vida del Monasterio**. Durante más de siglo y medio permanecimos en el Convento de Nuestra Señora de la Merced. Con una solemne Eucaristía presidida por el Vicario General Rvdo. D. Francisco Conesa Ferrer y concelebrada por siete sacerdotes, una multitud de fieles abarrotó nuestro pequeño templo para acompañarnos en la emotiva despedida del antiguo Monasterio de la Merced.  
 
 Por la tarde, con una sencilla procesión, nos dirigimos a la Basílica para despedirnos de la Patrona, la Virgen de la Asunción, acompañadas por muchos ilicitanos. Allí, dos sacerdotes, los Rvdos. D. Joaquín López y D. Francisco Román, bendijeron la ofrenda floral y nos dirigieron palabras de exhortación antes de darnos la bendición final. Después de cantar la Salve con fervor, nos encaminamos a nuestra nueva morada para comenzar de nuevo con ánimo firme en el nombre del Señor.  
 
@@ -20,9 +20,11 @@ El actual Monasterio comenzó a edificarse el 23 de octubre de 2005. La Primera 
 
 Ya instaladas en nuestro nuevo Monasterio y tras un mes de intenso trabajo y preparativos, llegó el día 1 de noviembre de 2007 en que se dedicó la iglesia a la Virgen María bajo la advocación de la Inmaculada Concepción, e inauguramos el Monasterio bajo la protección de Santa Clara.  
 
-En este acto memorable estuvieron presentes el Ilmo. Sr. Alcalde D. Alejandro Soler y toda la Corporación, así como diversas personalidades civiles y representantes políticos. Al inicio del acto, tanto el Sr. Alcalde como el arquitecto D. Antonio Serrano Brú entregaron el edificio al Rvdmo. Sr. Obispo D. Rafael Palmero Ramos, quien a su vez lo confió a la Rvda. Madre Clara Juárez, abadesa de la comunidad. Ella agradeció vivamente a todos por su presencia y, en especial, a quienes hicieron posible este Monasterio, con un recuerdo especial al Obispo de Ávila, promotor del proyecto, a la Madre Presidenta Federal Josefina Bastida y a Sor Luisa María Martínez, Vicepresidenta Federal.  
-
 <p class="frase-impacto">«Que este Monasterio sea los pulmones del pueblo de Elche y un referente para la vida de todos»</p>
+
+<img src="/imagenes/noticias/BendiciónNuevaIglesia.png" alt="Bendición de la nueva iglesia" class="imagen-centro" />
+
+En este acto memorable estuvieron presentes el Ilmo. Sr. Alcalde D. Alejandro Soler y toda la Corporación, así como diversas personalidades civiles y representantes políticos. Al inicio del acto, tanto el Sr. Alcalde como el arquitecto D. Antonio Serrano Brú entregaron el edificio al Rvdmo. Sr. Obispo D. Rafael Palmero Ramos, quien a su vez lo confió a la Rvda. Madre Clara Juárez, abadesa de la comunidad. Ella agradeció vivamente a todos por su presencia y, en especial, a quienes hicieron posible este Monasterio, con un recuerdo especial al Obispo de Ávila, promotor del proyecto, a la Madre Presidenta Federal Josefina Bastida y a Sor Luisa María Martínez, Vicepresidenta Federal.  
 
 Acto seguido se descorrió el velo de la placa conmemorativa colocada a la entrada del Monasterio.  
 
