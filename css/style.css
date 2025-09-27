@@ -422,10 +422,11 @@ footer {
 
   /* Haz el icono un pelín más grande en móvil (opcional) */
   footer .footer-links img {
-    width: 36px !important;
-    height: 36px !important;
-    transform: none !important;    /* sin zoom en táctil */
-  }
+  width: 40px !important;   /* mismo ancho para todos */
+  height: auto !important;  /* respeta proporciones */
+  max-height: 40px;         /* evita que uno quede desproporcionado */
+  transform: none !important;
+}
 
   /* El tooltip pasa a ser un caption visible bajo el icono */
   .footer-links .tooltip {
