@@ -11,7 +11,8 @@ title: Vocación Clarisa
   <p>El inicio de la vocación tiene su raíz en la alegría por el <strong>encuentro con Jesucristo resucitado</strong>, y que se inicia con la consciencia de la llamada personal de Dios y la respuesta personal a <strong>vivir de la mano de Santa Clara</strong> el seguimiento de Aquél que es el Camino, la Verdad y la Vida. Las Clarisas buscan configurarse con Él, viviendo como Él vivió: sin posesiones, en obediencia amorosa, fraternidad y adoración continua.</p>
 </article>
 
-  
+<p class="frase-impacto">«Feliz, ciertamente, aquella a la que se concede gozar de estas sagradas nupcias...»</p>
+
 <article>
   <h2>Seguimiento de Cristo Pobre y Crucificado</h2>
   <img src="/imagenes/seguimiento-cristo.png" alt="Seguimiento de Cristo Pobre y Crucificado" />
