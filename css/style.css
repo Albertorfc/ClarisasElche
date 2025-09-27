@@ -403,3 +403,43 @@ footer {
   border-radius: 0;               /* sin esquinas redondeadas */
   transition: transform 0.2s ease-in-out;
 }
+
+
+/* ===== Footer responsive (móvil) ===== */
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;        /* uno debajo de otro */
+    gap: 14px;                     /* espacio entre elementos */
+    align-items: center;
+  }
+
+  /* Icono + “caption” centrados */
+  .footer-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Haz el icono un pelín más grande en móvil (opcional) */
+  footer .footer-links img {
+    width: 36px !important;
+    height: 36px !important;
+    transform: none !important;    /* sin zoom en táctil */
+  }
+
+  /* El tooltip pasa a ser un caption visible bajo el icono */
+  .footer-links .tooltip {
+    visibility: visible;
+    opacity: 1;
+    position: static;              /* deja de ser absolute */
+    bottom: auto;
+    left: auto;
+    transform: none;
+    background: transparent;       /* sin fondo para parecer texto normal */
+    color: #6b4e2f;
+    padding: 6px 0 0;
+    border-radius: 0;
+    white-space: normal;           /* por si necesita saltos de línea */
+    text-align: center;
+  }
+}
