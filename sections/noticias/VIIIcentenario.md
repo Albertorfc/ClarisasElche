@@ -2,7 +2,7 @@
 title: VIII centenario de las Clarisas
 layout: noticia.njk
 date: 2012-03-28
-image: /imagenes/noticias/800anivStaClara.png
+image: /imagenes/800anivStaClara.png
 excerpt: Las Hermanas Clarisas celerbran el VIII aniversario de la consagración de Santa Clara.
 ---
 
