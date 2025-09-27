@@ -2,7 +2,7 @@
 title: Inauguración de la nueva iglesia
 layout: noticia.njk
 date: 2007-11-01
-image: /imagenes/noticias/20071101.jpg
+image: /imagenes/noticias/BendiciónNuevaIglesia.png
 excerpt: El Sr. Obispo D. Rafael Palmero Ramos dedica la nueva iglesia del Monasterio
 ---
 
@@ -22,7 +22,7 @@ Ya instaladas en nuestro nuevo Monasterio y tras un mes de intenso trabajo y pre
 
 <p class="frase-impacto">«Que este Monasterio sea los pulmones del pueblo de Elche y un referente para la vida de todos»</p>
 
-<img src="/imagenes/noticias/BendiciónNuevaIglesia.png" alt="Bendición de la nueva iglesia" class="imagen-centro" />
+<img src="/imagenes/noticias/20071101.jpg" alt="Placa conmemorativa de la bendición de la nueva iglesia" class="imagen-centro" />
 
 En este acto memorable estuvieron presentes el Ilmo. Sr. Alcalde D. Alejandro Soler y toda la Corporación, así como diversas personalidades civiles y representantes políticos. Al inicio del acto, tanto el Sr. Alcalde como el arquitecto D. Antonio Serrano Brú entregaron el edificio al Rvdmo. Sr. Obispo D. Rafael Palmero Ramos, quien a su vez lo confió a la Rvda. Madre Clara Juárez, abadesa de la comunidad. Ella agradeció vivamente a todos por su presencia y, en especial, a quienes hicieron posible este Monasterio, con un recuerdo especial al Obispo de Ávila, promotor del proyecto, a la Madre Presidenta Federal Josefina Bastida y a Sor Luisa María Martínez, Vicepresidenta Federal.  
 
