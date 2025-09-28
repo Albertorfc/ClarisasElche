@@ -11,6 +11,8 @@ description: Conoce a Santa Clara de Asís, fundadora de la Orden de las Clarisa
   El encuentro con <strong>San Francisco</strong> marcó profundamente su camino espiritual.
 </p>
 
+<p class="frase-impacto">Aquél que multiplica el pan en la Eucaristía... ¿acaso le faltará poder para abastecer de pan a sus esposas pobres?</p>
+
 <p>
   La noche del Domingo de Ramos de 1212, Clara abandonó su hogar y consagró su vida al Señor. Francisco le impuso el hábito
   y la acogió en la Porciúncula. Así nació la Orden de las Hermanas Pobres.
