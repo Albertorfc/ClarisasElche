@@ -14,7 +14,7 @@ description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de 
   Las Hermanas Pobres de Santa Clara os damos la bienvenida. El Señor vuelva su rostro a vosotros y os dé la paz.
 </p> 
 
-<p class="frase-impacto">«Qué negocio tan grande y loable: dejar las cosas temporales por las eternas.»</p>
+<p class="frase-impacto">Qué negocio tan grande y loable: dejar las cosas temporales por las eternas.</p>
 
 <p>
   Desde la clausura, acompañamos con nuestra oración a la Iglesia y al mundo, ofreciendo un espacio de paz a quienes buscan a Dios.
