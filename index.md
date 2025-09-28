@@ -1,17 +1,17 @@
 ---
 layout: base.njk
 title: Hermanas Clarisas de Elche
-description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de Elche – Monasterio de Santa Clara. Monjas de vida contemplativa que ofrecen oración, meditación y ayuda espiritual desde 1516 en el corazón de Elche.
+description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de Elche – Monasterio de Santa Clara. Monjas de vida contemplativa que ofrecen oración, meditación y ayuda espiritual desde 1516 en el corazón de Elche. Espíritu Franciscano.
 ---
 
-<h2 class="centrado">¡Paz y bien!</h2>
+<h2 class="centrado">¡Paz y bien en el Señor!</h2>
 
 <div style="position: relative; width: 100%; max-width: 600px; height: 260px; overflow: hidden; margin: 0 auto 2rem auto; border-radius: 12px;">
   <img src="/imagenes/paz-y-bien-ocre.png" alt="Paz y Bien" style="position: absolute; top: 0; left: 0; width: 100%;" />
 </div>
 
 <p>
-  Os dan la bienvenida las Hermanas Pobres de Santa Clara. El Señor vuelva su rostro a vosotras y os dé la paz.
+  Las Hermanas Pobres de Santa Clara os damos la bienvenida. El Señor vuelva su rostro a vosotros y os dé la paz.
 </p> 
 
 <p class="frase-impacto">«Qué negocio tan grande y loable: dejar las cosas temporales por las eternas.»</p>
@@ -24,7 +24,7 @@ description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de 
 <h2>Santa Clara de Asís</h2>
 
 <p>
-  Fundó con <strong>San Francisco</strong> la <strong>Orden de las Damas Pobres</strong> —las <em>Clarisas</em>—, desde el 
+  Fundó nuestra orden con <strong>San Francisco</strong>, la <strong>Orden de las Damas Pobres</strong> —las <em>Clarisas</em>—, desde el 
   monasterio de San Damián, donde su vida escondida fue luz para toda la Iglesia.
 </p>
 
@@ -34,7 +34,7 @@ description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de 
 
 <p>
   Su entrega fue radical y su amor por la Eucaristía sigue siendo ejemplo de seguimiento de Cristo. Su carisma sigue
-  vivo hoy en comunidades de Clarisas que oran bajo su intercesión en todo el mundo.
+  vivo hoy en comunidades de Clarisas que oramos bajo su intercesión en todo el mundo.
 </p>
 
 <a href="/sections/santa-clara/" class="boton">Conoce a Santa Clara</a>
@@ -48,7 +48,7 @@ description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de 
 </p>
 
 <p>
-  <strong>Santa Clara</strong> rezó muchas veces ante esta imagen, que todavía se conserva en el primer Convento, en Asís.
+  <strong>Santa Clara</strong> rezó muchas veces ante esta imagen, que todavía se conserva en el primer Convento de Clarisas, en Asís.
 </p>
 
 <p>
