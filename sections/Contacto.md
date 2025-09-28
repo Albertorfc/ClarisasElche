@@ -25,13 +25,12 @@ description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en
 
   <div>
     <h2>Horarios de Misa</h2>
-    <p><strong>Lunes a sábado:</strong> 8:00 h<br />
-    <strong>Domingos y festivos:</strong> 11:00 h</p>
+    <p><strong>Lunes a sábado:</strong> 🕗 8:00 h<br />
+    <strong>Domingos y festivos:</strong> 🕚 11:00 h</p>
 
     <h2>Visitas en el torno</h2>
     <p>
-      Lunes a viernes: 10:00 – 13:00 y 17:00 – 18:30<br />
-      Sábados: 10:00 – 12:30<br />
+      De lunes a sábado: 🕘 9:00 – 🕞 13:30 y 🕓 16:00 – 🕕 18:00<br />
       <em>(Domingos y festivos no se atiende)</em>
     </p>
   </div>
@@ -50,11 +49,11 @@ description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en
 <section style="margin: 3rem auto; max-width: 800px;">
   <h2 style="text-align: center;">Cómo llegar</h2>
   <p>
-    El monasterio se encuentra junto al cauce del río Vinalopó, entre al Parque Infantil de Tráfico y el Puente del <em>Bimil·lenari</em>.
+    El nuevo monasterio se encuentra junto al cauce del río Vinalopó, entre al Parque Infantil de Tráfico y el Puente del <em>Bimil·lenari</em>, junto a las casas de Ferrández, frente al <em>Hort de Revenga</em>.
   </p>
   
   <p>
-  Se puede llegar a pie desde la Avenida Alcalde Vicente Quiles (antiguamente del Ferrrocarril) o en coche, con aparcamiento disponible.
+  Se puede llegar a pie desde la Avenida Alcalde Vicente Quiles (antiguamente del Ferrrocarril) a cruzando el Parque Infantil de Tráfico, o en coche, con aparcamiento disponible.
   </p>
 
   <div style="margin-top: 1.5rem;">
