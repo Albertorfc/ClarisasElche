@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Santa Clara de Asís
+description: Conoce a Santa Clara de Asís, fundadora de la Orden de las Clarisas O.S.C. junto a San Francisco. Su vida y carisma inspiran a nuestra comunidad en Elche.
 ---
 
 <h2>Orígenes y vocación</h2>
