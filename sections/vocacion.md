@@ -14,12 +14,8 @@ description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discerni
 
 <p class="frase-impacto">
   «Feliz, ciertamente, aquella a la que se concede gozar de estas sagradas nupcias...»
-  <a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20100915.html" target="_blank" rel="noopener"
-     style="color: #3a6ea5; font-size: 0.9em; text-decoration: none; cursor: pointer;"
-     onmouseover="this.style.textDecoration='underline'; this.style.color='#2c4d73';"
-     onmouseout="this.style.textDecoration='none'; this.style.color='#3a6ea5';"
-  >Leer más</a>
-</p>
+  </p>
+<a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20100915.html">Leer más</a>
 
 <p>Las Clarisas buscamos configurarnos con Cristo, viviendo como Él vivió: sin posesiones, en obediencia amorosa a la Providencia, fraternidad y adoración continua.</p>
 
