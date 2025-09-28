@@ -30,7 +30,7 @@ description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de 
 
 <img src="/imagenes/simone-martini.jpg" alt="Santa Clara" />
 
-<p class="frase-impacto">«Sed siempre amantes de Dios y de vuestras almas y de todas vuestras hermanas»</p>
+<p class="frase-impacto">Sed siempre amantes de Dios y de vuestras almas y de todas vuestras hermanas</p>
 
 <p>
   Su entrega fue radical y su amor por la Eucaristía sigue siendo ejemplo de seguimiento de Cristo. Su carisma sigue
