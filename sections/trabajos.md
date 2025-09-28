@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: Nuestro trabajo
-description: Trabajos de las Hermanas Clarisas de Elche: dulces del convento, elaboración artesanal artesanos de formas, dulces caseros y labores de costura, planchado y bordado. 
+title: "Nuestro trabajo"
+description: "Trabajos de las Hermanas Clarisas de Elche: dulces del convento, elaboración artesanal, artesanos de formas, dulces caseros y labores de costura, planchado y bordado."
 ---
 
 <h2 class="centrado">Nuestro trabajo</h2>
