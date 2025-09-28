@@ -4,6 +4,10 @@ title: Historia de las Clarisas en Elche
 description: Nuestro Monasterio de Santa Clara en Elche forma parte de la vida de la ciudad desde hace más de 500 años. Historia, fe y tradición en el corazón de Elche.
 ---
 
+
+<p class="frase-impacto">«Que este Monasterio sea los pulmones del pueblo de Elche y un referente para la vida de todos.»</p>
+D. Rafael Palmero Obispo de Orihuela en la bendición de la iglesia del Convento
+
 <h2>Primer convento: la Encarnación</h2>
 
 <p>
