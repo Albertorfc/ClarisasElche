@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Hermanas Clarisas de Elche
-description: Hermanas Clarisas de Elche – Monasterio de Santa Clara. Monjas de vida contemplativa que ofrecen oración, meditación y ayuda espiritual desde 1516 en el corazón de Elche.
+description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de Elche – Monasterio de Santa Clara. Monjas de vida contemplativa que ofrecen oración, meditación y ayuda espiritual desde 1516 en el corazón de Elche.
 ---
 
 <h2 class="centrado">¡Paz y bien!</h2>
