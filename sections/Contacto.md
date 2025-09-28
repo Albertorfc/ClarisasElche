@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Contacto
+description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en Elche. Información para visitas vocación, encargos, dulces, número de teléfono, y apoyo a la comunidad.
 ---
 
 <div>
