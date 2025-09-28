@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Vocación Clarisa
+description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discernir y responder a la vocación de ser Clarisa en el Monasterio de Santa Clara de Elche.
 ---
 
 <section class="grid-vocacion">
