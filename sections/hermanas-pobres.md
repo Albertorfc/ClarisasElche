@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Hermanas Pobres de Santa Clara
+description: Descubre la vocación de las Hermanas Pobres de Santa Clara. Vida de oración, fraternidad y entrega siguiendo el Evangelio con sencillez.
 ---
 
 <h2>La fundación y San Damián</h2>
