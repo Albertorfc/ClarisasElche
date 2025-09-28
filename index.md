@@ -44,9 +44,9 @@ description: Hermanas Clarisas (Orden de Santa Clara Ordo Sanctae Clarae OSC de 
 <h2>Cruz de San Damián</h2>
 
 <p>
-  Ante esta cruz, <strong>San Francisco</strong> escuchó la llamada del Señor: <em>Reconstruye mi Iglesia</em>.
+  Ante esta cruz, <strong>San Francisco</strong> escuchó la llamada del Señor:
 </p>
-
+<p class="frase-impacto">Reconstruye mi Iglesia</p>
 <p>
   <strong>Santa Clara</strong> rezó muchas veces ante esta imagen, que todavía se conserva en el primer Convento de Clarisas, en Asís.
 </p>
