@@ -10,6 +10,7 @@ El mantenimiento del Monasterio es con nuestro trabajo, principal medio de vida.
 </p>
 
 <h3>Elaboración de formas</h3>
+<img src="/imagenes/formas.png" alt="Formas para la consagración" />
 <p>
 A Dios gracias, se nos está abriendo mucho campo para los pedidos y envíos. Es un medio que nos ayuda bastante a sufragar todos los gastos del nuevo edificio en el que habitamos.
 </p>
