@@ -11,7 +11,7 @@ D. Rafael Palmero Obispo de Orihuela en la bendición de la iglesia del Convento
 <h2>Primer convento: la Encarnación</h2>
 
 <p>
-  En 1516 se fundó la primera comunidad clarisa en Elche, ubicada en el antiguo convento de la Encarnación, en el lugar que hoy ocupa la Glorieta. Fue una fundación de origen diocesano, promovida por clérigos y fieles ilicitanos, con el permiso del obispo de Orihuela. Desde allí, las hermanas iniciaron su vida contemplativa, ganándose el aprecio del pueblo.
+  En 1516 llega a la villa la primera comunidad de Clarisas, que se establece en un solar con huerto cedido por el Consejo de la Villa y Marquesado de Elche, en el espacio de la actual Glorieta, donde se construye el convento de la Encarnación. La fundación fue promovida por por clérigos y fieles ilicitanos, con el permiso del obispo de Orihuela. Desde allí, nuestras primeras hermanas en la entonces villa, iniciaron su vida contemplativa, ganándose el aprecio del pueblo.
 </p>
 
 <img src="/imagenes/convento-encarnacion.jpg" alt="Antiguo convento de la Encarnación" />
@@ -19,17 +19,17 @@ D. Rafael Palmero Obispo de Orihuela en la bendición de la iglesia del Convento
 <h2>Traslado al convento de la Merced</h2>
 
 <p>
-  En diciembre de 1853 el convento de la Encarnación sufrió daños graves a causa de una gran tormenta, por lo que quedó prácticamente arruinado. Como consecuencia, las monjas clarisas se trasladaron provisionalmente al antiguo Convento de la Merced (también conocido como de Santa Lucía).
+  En diciembre de 1853 el convento de la Encarnación sufrió daños graves a causa de una gran tormenta, por lo que quedó prácticamente arruinado. Como consecuencia, las hermanas que ocupaban el convento se trasladaron provisionalmente al antiguo Convento de la Merced (también conocido como de Santa Lucía).
 </p>
 
 <img src="/imagenes/convento-merced-1.jpg" alt="Fachada del convento de la Merced" />
 
 <p>
-  Posteriormente, en mayo de 1854, el Ayuntamiento de Elche aceptó formalmente la permuta que intercambiaba los dos edificios, de modo que las clarisas pasaron a ser propietarias del convento de la Merced.
+  Posteriormente, en mayo de 1854, el Ayuntamiento de Elche aceptó formalmente la permuta que intercambiaba los dos edificios, de modo que la Comunidad pasó a ser propietaria del convento de la Merced.
 </p>
 
 <p>
-  El edificio contaba con iglesia propia, que fue muy frecuentada por los fieles. Lamentablemente, esta iglesia fue incendiada en febrero de 1936, al final del régimen republicano radical previo a la Guerra Civil.
+  El edificio contaba con iglesia propia, que fue muy frecuentada por los fieles. Lamentablemente, esta iglesia fue incendiada en febrero de 1936 por radicales, en los meses previos a la Guerra Civil.
 </p>
 
 <img src="/imagenes/convento-merced-2.jpg" alt="Interior del convento de la Merced" />
@@ -39,7 +39,7 @@ D. Rafael Palmero Obispo de Orihuela en la bendición de la iglesia del Convento
 <h2>Actual convento de Santa Clara</h2>
 
 <p>
-  En pleno siglo XXI, dado el mal estado del convento, se acuerda una permuta con el Ayuntamiento de Elche, que construye el nuevo <strong>Monasterio de Santa Clara</strong> en la zona norte de la ciudad junto al cauce del río Vinalopó, cerca del puente del <em>Bimil·lenari</em>.
+  En pleno siglo XXI, dado el mal estado del convento, la Comunidad de Hermanas Clarisas acuerda una permuta con el Ayuntamiento de Elche, que construye el nuevo <strong>Monasterio de Santa Clara</strong> en la zona norte de la ciudad junto al cauce del río Vinalopó, cerca del puente del <em>Bimil·lenari</em>.
 </p>
 
 <p>
