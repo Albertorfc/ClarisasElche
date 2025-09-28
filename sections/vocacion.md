@@ -9,7 +9,7 @@ description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discerni
 <article>
   <h2>La Vocación de la Alegría</h2>
   
-  <p>El inicio de la vocación tiene su raíz en la alegría por el <strong>encuentro con Jesucristo resucitado</strong>, y que se inicia con la consciencia de la llamada personal de Dios y la respuesta personal a <strong>vivir de la mano de Santa Clara</strong> el seguimiento de Aquél que es el Camino, la Verdad y la Vida. Las Clarisas buscan configurarse con Él, viviendo como Él vivió: sin posesiones, en obediencia amorosa, fraternidad y adoración continua.</p>
+  <p>El inicio de nuestra vocación tiene su raíz en la alegría por el <strong>encuentro con Jesucristo resucitado</strong>, y que se inicia con la consciencia de la llamada personal de Dios y la respuesta personal a <strong>vivir de la mano de Santa Clara</strong> el seguimiento de Aquél que es <strong>el Camino, la Verdad y la Vida</strong>strong>. </p>
 </article>
 
 <p class="frase-impacto">
@@ -21,10 +21,12 @@ description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discerni
   >Leer más</a>
 </p>
 
+<p> Las Clarisas buscamos configurarnos con Cristo, viviendo como Él vivió: sin posesiones, en obediencia amorosa a la Providencia, fraternidad y adoración continua.</p>
+
 <article>
   <h2>Seguimiento de Cristo Pobre y Crucificado</h2>
   <img src="/imagenes/seguimiento-cristo.png" alt="Seguimiento de Cristo Pobre y Crucificado" />
-  <p>El centro de la vida clarisa es Jesucristo, especialmente en su pobreza, humildad y entrega total al Padre. Las Clarisas buscan configurarse con Él, viviendo como Él vivió: sin posesiones, en obediencia amorosa, fraternidad y adoración continua. La Regla de Santa Clara expresa y protege esta vocación, pero no la sustituye: su finalidad es conducirlas a una unión más íntima con Cristo vivo y resucitado.</p>
+  <p>El centro de la vida clarisa es Jesucristo, especialmente en su pobreza, humildad y entrega total al Padre. Las Clarisas buscamos configurarse con Cristo, viviendo como Él vivió: sin posesiones, en obediencia amorosa, fraternidad y adoración continua. La Regla de Santa Clara expresa y protege esta vocación, pero no la sustituye: su finalidad es conducirlas a una unión más íntima con Cristo vivo y resucitado.</p>
 </article>
 
 <article>
