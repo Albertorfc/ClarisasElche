@@ -7,19 +7,19 @@ description: "Trabajos de las Hermanas Clarisas de Elche: dulces del convento, e
 <h2 class="centrado">Nuestro trabajo</h2>
 
 <p>
-El mantenimiento del Monasterio es con nuestro trabajo, principal medio de vida.
+El mantenimiento del Monasterio es, con nuestro trabajo, nuestro principal medio de vida.
 </p>
 
 <h3>Elaboración de formas</h3>
 <img src="/imagenes/formas.png" alt="Formas para la consagración" />
 <p>
-A Dios gracias, se nos está abriendo mucho campo para los pedidos y envíos. Es un medio que nos ayuda bastante a sufragar todos los gastos del nuevo edificio en el que habitamos.
+A Dios gracias, tenemos pedidos y envíos. Es un medio que nos ayuda a sufragar todos los gastos del nuevo Convento.
 </p>
 
 <h3>Dulces artesanos</h3>
 <img src="/imagenes/HermanaDulces.jpg" alt="Una de nuestras hermanas con dulces" />
 <p>
-También elaboramos dulces que podéis conocer mejor en nuestro Instagram:
+También elaboramos dulces, que podéis conocer mejor en nuestro Instagram:
 </p>
 <p style="text-align:center;">
   <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank" class="boton">
@@ -36,5 +36,5 @@ Igualmente nos ayudamos con la costura y todo lo que se presente y podamos reali
 </p>
 
 <p class="frase-impacto">
-Nuestro principal trabajo es la oración.
+Nuestro principal trabajo es siempre la oración.
 </p>
