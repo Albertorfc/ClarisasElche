@@ -3,28 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  
-  <!-- Open Graph (WhatsApp, Facebook, etc.) -->
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ description }}" />
-  <meta property="og:image" content="https://www.clarisaselche.es/imagenes/noticias/20250811.png" />
-  <meta property="og:url" content="https://www.clarisaselche.es" />
+  <meta name="description" content="{{ description or 'Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516.' }}">
+
+  <!-- ================= Open Graph / WhatsApp / Facebook ================= -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  
-  <!-- Twitter Cards -->
+  <meta property="og:site_name" content="Hermanas Clarisas de Elche" />
+
+  <meta property="og:title" content="Hermanas Clarisas de Elche" />
+  <meta property="og:description" content="Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516." />
+  <meta property="og:url" content="https://www.clarisaselche.es/" />
+
+  <meta property="og:image" content="https://www.clarisaselche.es/imagenes/og-home.jpg" />
+  <meta property="og:image:secure_url" content="https://www.clarisaselche.es/imagenes/og-home.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- ================= Twitter Cards ================= -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ description }}" />
-  <meta name="twitter:image" content="https://www.clarisaselche.es/imagenes/noticias/20250811.png" />
+  <meta name="twitter:title" content="Hermanas Clarisas de Elche" />
+  <meta name="twitter:description" content="Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516." />
+  <meta name="twitter:image" content="https://www.clarisaselche.es/imagenes/og-home.jpg" />
 
   <link rel="icon" href="/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="/css/style.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <!-- Cabecera común -->
@@ -37,28 +45,27 @@
   </div>
 </header>
 
-  <!-- Menú común -->
-  <nav>
-    <div class="nav-container">
-      <button class="menu-toggle">☰</button>
-      {% include "nav.njk" %}
-    </div>
-  </nav>
+<!-- Menú común -->
+<nav>
+  <div class="nav-container">
+    <button class="menu-toggle">☰</button>
+    {% include "nav.njk" %}
+  </div>
+</nav>
 
-  <!-- Contenido de cada página -->
-  <main>
-    <div class="columnas-balanceadas">
-      {% block content %}
-        {{ content | safe }}
-      {% endblock %}
-    </div>
-  </main>
+<!-- Contenido de cada página -->
+<main>
+  <div class="columnas-balanceadas">
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+  </div>
+</main>
 
 <footer>
   <div class="footer-links">
     <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank" rel="noopener">
-      <img src="/imagenes/logo-IG.png"
-           alt="Instagram" width="32" height="32">
+      <img src="/imagenes/logo-IG.png" alt="Instagram" width="32" height="32">
       <span class="tooltip">@deliciasdesantaclaraelche</span>
     </a>
 
@@ -76,44 +83,41 @@
       <img src="/imagenes/logo-STAMARIA.png" alt="Basílica Santa María Elche" width="32" height="32">
       <span class="tooltip">Basílica Santa María Elche</span>
     </a>
-
   </div>
 
   <p>&copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara</p>
 </footer>
 
+<!-- Script menú hamburguesa -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
 
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  }
+});
+</script>
 
-  <!-- Script del menú hamburguesa -->
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav-links');
-
-    if (toggle && nav) {
-      toggle.addEventListener('click', () => {
-        nav.classList.toggle('show');
-      });
+<!-- AOS Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('p, h2, img').forEach(el => {
+    if (!el.hasAttribute('data-aos')) {
+      el.setAttribute('data-aos', 'fade-up');
     }
   });
-  </script>
 
-  <!-- AOS Scripts -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('p, h2, img').forEach(el => {
-        if (!el.hasAttribute('data-aos')) {
-          el.setAttribute('data-aos', 'fade-up');
-        }
-      });
-
-      AOS.init({
-        duration: 800,
-        once: true
-      });
-    });
-  </script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+});
+</script>
 
 </body>
 </html>
