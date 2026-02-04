@@ -444,3 +444,25 @@ footer {
     text-align: center;
   }
 }
+
+.video-embed {
+  margin: 2rem auto;
+  max-width: 860px;
+}
+
+.video-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.noticia-detalle-cuerpo blockquote {
+  margin: 2rem auto;
+  padding-left: 1rem;
+  border-left: 4px solid #c7a14a;
+  font-style: italic;
+  max-width: 70ch;
+}
+
