@@ -5,65 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>{{ title }}</title>
-  <meta name="description" content="{{ description or 'Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516.' }}">
+  <meta name="description" content="{{ description or excerpt or 'Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516.' }}">
 
-  {# Dominio del sitio (si existe metadata.url se usa; si no, fallback) #}
-{% set siteUrl = metadata.url or "https://www.clarisaselche.es" %}
+  {# Dominio del sitio #}
+  {% set siteUrl = metadata.url or "https://www.clarisaselche.es" %}
 
-  {# Consideramos "article" si es una noticia #}
-  {% set isArticle =
-      page.data.layout == 'noticia.njk'
-      or page.data.excerpt is defined
-      or page.data.image is defined
-  %}
+  {# Detectar si es una noticia #}
+  {% set isArticle = layout == "noticia.njk" %}
 
-  {# Título #}
-{% set ogTitle = title %}
+  {# Open Graph title #}
+  {% set ogTitle = title or "Hermanas Clarisas de Elche" %}
+
+  {# Open Graph description (prioridad: excerpt → description → fallback) #}
   {% set ogDescription =
-      page.data.excerpt
-      or page.data.description
-      or description
-      or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516."
+    excerpt
+    or description
+    or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516."
   %}
 
-{# Imagen: prioridad 1 = imagen front matter `image` #}
-{% set candidateImages = [
-  page.data.image,
-  image
-] %}
+  {# Imagen Open Graph (prioridad: image → fallback) #}
+  {% set chosenImage = image or "/imagenes/og-home.jpg" %}
 
-  {% set chosenImage = none %}
-  {% for img in candidateImages %}
-    {% if img and not chosenImage %}
-      {% set chosenImage = img %}
-    {% endif %}
-  {% endfor %}
-
-  {# Si no aparece, intentamos buscarla en la colección de noticias (último recurso) #}
-  {% if not chosenImage and collections.noticias %}
-    {% for post in collections.noticias %}
-      {% if post.url == page.url and post.data.image %}
-        {% set chosenImage = post.data.image %}
-        {% endif %}
-    {% endfor %}
-  {% endif %}
-
-  {# Fallback final a la imagen de la home #}
-  {% if not chosenImage %}
-    {% set chosenImage = '/imagenes/og-home.jpg' %}
-  {% endif %}
-
-  {# Convertimos la imagen a URL absoluta si es relativa #}
-  {% if '://' in chosenImage %}
-  {% set ogImage = chosenImage %}
-{% else %}
-  {% if chosenImage and chosenImage[0] == '/' %}
-    {% set ogImage = siteUrl + chosenImage %}
+  {# Convertir imagen a URL absoluta #}
+  {% if "://" in chosenImage %}
+    {% set ogImage = chosenImage %}
   {% else %}
-    {% set ogImage = siteUrl + '/' + chosenImage %}
+    {% if chosenImage[0] == "/" %}
+      {% set ogImage = siteUrl + chosenImage %}
+    {% else %}
+      {% set ogImage = siteUrl + "/" + chosenImage %}
+    {% endif %}
   {% endif %}
-{% endif %}
-
 
   {# URL absoluta de la página #}
   {% set pageUrl = siteUrl + page.url %}
@@ -72,11 +44,9 @@
   <meta property="og:type" content="{{ 'article' if isArticle else 'website' }}" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Hermanas Clarisas de Elche" />
-
   <meta property="og:title" content="{{ ogTitle }}" />
   <meta property="og:description" content="{{ ogDescription }}" />
   <meta property="og:url" content="{{ pageUrl }}" />
-
   <meta property="og:image" content="{{ ogImage }}" />
   <meta property="og:image:secure_url" content="{{ ogImage }}" />
   <meta property="og:image:width" content="1200" />
@@ -150,11 +120,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav-links');
-
   if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('show');
-    });
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
   }
 });
 </script>
@@ -167,11 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
       el.setAttribute('data-aos', 'fade-up');
     }
   });
-
-  AOS.init({
-    duration: 800,
-    once: true
-  });
+  AOS.init({ duration: 800, once: true });
 });
 </script>
 
