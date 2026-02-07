@@ -8,8 +8,7 @@
   <meta name="description" content="{{ description or 'Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516.' }}">
 
   {# Dominio del sitio (si existe metadata.url se usa; si no, fallback) #}
-  {% set siteUrl = metadata.url or "https://www.clarisaselche.es" %}
-  {% set siteUrl = siteUrl.rstrip('/') %}
+{% set siteUrl = metadata.url or "https://www.clarisaselche.es" %}
 
   {# Consideramos "article" si es una noticia #}
   {% set isArticle =
@@ -55,10 +54,15 @@
 
   {# Convertimos la imagen a URL absoluta si es relativa #}
   {% if '://' in chosenImage %}
-    {% set ogImage = chosenImage %}
+  {% set ogImage = chosenImage %}
+{% else %}
+  {% if chosenImage and chosenImage[0] == '/' %}
+    {% set ogImage = siteUrl + chosenImage %}
   {% else %}
-    {% set ogImage = siteUrl + (chosenImage.startswith('/') ? chosenImage : '/' + chosenImage) %}
+    {% set ogImage = siteUrl + '/' + chosenImage %}
   {% endif %}
+{% endif %}
+
 
   {# URL absoluta de la página #}
   {% set pageUrl = siteUrl + page.url %}
