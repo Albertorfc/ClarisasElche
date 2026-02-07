@@ -1,152 +1,58 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+{% extends "layouts/base.njk" %}
 
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description or 'Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516.' }}">
+{% block content %}
+<article class="noticia-detalle" data-aos="fade-up">
 
-  {# ------------------ CONFIG: dominio del sitio ------------------ #}
-  {# Si tienes un _data/metadata.* con url, se usará; si no, cámbialo aquí #}
-  {% set siteUrl = metadata.url or "https://www.clarisaselche.es" %}
-  {# Aseguramos que siteUrl no termina con slash #}
-  {% set siteUrl = siteUrl.rstrip('/') %}
+  <h1 class="noticia-detalle-titulo centrado">{{ title }}</h1>
 
-  {# ------------------ Detectar si la página es "article" (noticia)  ------------------ #}
-  {% set isArticle = (page.data.excerpt is defined) or (page.data.image is defined) or (page.filePathStem and page.filePathStem contains 'noticias') %}
+  <p class="noticia-detalle-fecha centrado">
+    <em>{{ date | readableDate }}</em>
+  </p>
 
-  {# ------------------ Valores dinámicos con fallbacks ------------------ #}
-  {% set ogTitle = page.data.title or title or "Hermanas Clarisas de Elche" %}
-  {% set ogDescription = page.data.excerpt or description or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516." %}
-
-  {# ------------------ Imagen: si page.data.image existe la usamos; si es relativa la convertimos a absoluta #}
-  {% if page.data.image %}
-    {% set rawImage = page.data.image %}
-    {% if '://' in rawImage %}
-      {% set ogImage = rawImage %}
-    {% else %}
-      {% set ogImage = siteUrl + (rawImage.startswith('/') ? rawImage : '/' + rawImage) %}
-    {% endif %}
-  {% else %}
-    {# Fallback a la imagen de la home (asegúrate de subir og-home.jpg) #}
-    {% set ogImage = siteUrl + '/imagenes/og-home.jpg' %}
+  {# Aceptamos imagen ya sea en page.data.image o en image (front matter) #}
+  {% set img = page.data.image or image %}
+  {% if img %}
+    {# Si la imagen es relativa, el head la convertirá a absoluta; aquí mostramos la src tal cual #}
+    <img src="{{ img }}" alt="{{ title }}" class="noticia-detalle-imagen">
   {% endif %}
 
-  {# ------------------ URL absoluta de la página ------------------ #}
-  {% set pageUrl = siteUrl + page.url %}
+  {% if excerpt %}
+    <p class="noticia-detalle-excerpt centrado">
+      {{ excerpt }}
+    </p>
+  {% endif %}
 
-  <!-- ================= Open Graph / WhatsApp / Facebook ================= -->
-  <meta property="og:type" content="{{ 'article' if isArticle else 'website' }}" />
-  <meta property="og:locale" content="es_ES" />
-  <meta property="og:site_name" content="Hermanas Clarisas de Elche" />
-
-  <meta property="og:title" content="{{ ogTitle }}" />
-  <meta property="og:description" content="{{ ogDescription }}" />
-  <meta property="og:url" content="{{ pageUrl }}" />
-
-  <meta property="og:image" content="{{ ogImage }}" />
-  <meta property="og:image:secure_url" content="{{ ogImage }}" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-  <!-- ================= Twitter Cards ================= -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ ogTitle }}" />
-  <meta name="twitter:description" content="{{ ogDescription }}" />
-  <meta name="twitter:image" content="{{ ogImage }}" />
-
-  <link rel="icon" href="/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-<!-- Cabecera común -->
-<header class="hero-header">
-  <img src="/imagenes/noticias/20250811.png" alt="Encabezado" class="hero-img" />
-  <div class="hero-texto">
-    <h1>Hermanas Clarisas de Elche</h1>
-    <p>Monasterio de Santa Clara</p>
-    <p>Siguiendo a Cristo en Elche desde 1516</p>
-  </div>
-</header>
-
-<!-- Menú común -->
-<nav>
-  <div class="nav-container">
-    <button class="menu-toggle">☰</button>
-    {% include "nav.njk" %}
-  </div>
-</nav>
-
-<!-- Contenido de cada página -->
-<main>
-  <div class="columnas-balanceadas">
-    {% block content %}
-      {{ content | safe }}
-    {% endblock %}
-  </div>
-</main>
-
-<footer>
-  <div class="footer-links">
-    <a href="https://www.instagram.com/deliciasdesantaclaraelche/" target="_blank" rel="noopener">
-      <img src="/imagenes/logo-IG.png" alt="Instagram" width="32" height="32">
-      <span class="tooltip">@deliciasdesantaclaraelche</span>
-    </a>
-
-    <a href="https://www.vatican.va/" target="_blank" rel="noopener">
-      <img src="/imagenes/LogoSantaSede.png" alt="Santa Sede" width="32" height="32">
-      <span class="tooltip">Santa Sede</span>
-    </a>
-
-    <a href="https://www.diocesisoa.org/" target="_blank" rel="noopener">
-      <img src="/imagenes/logo-DOA-blanco.png" alt="Diócesis Orihuela-Alicante" width="32" height="32">
-      <span class="tooltip">Diócesis Orihuela-Alicante</span>
-    </a>
-
-    <a href="https://basilicasantamariaelche.es/" target="_blank" rel="noopener">
-      <img src="/imagenes/logo-STAMARIA.png" alt="Basílica Santa María Elche" width="32" height="32">
-      <span class="tooltip">Basílica Santa María Elche</span>
-    </a>
+  <div class="noticia-detalle-cuerpo">
+    {{ content | safe }}
   </div>
 
-  <p>&copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara</p>
-</footer>
+  <!-- Botón de regreso -->
+  <div class="volver-noticias centrado">
+    <a href="/sections/noticias/" class="boton boton-volver">⬅ Volver a Noticias</a>
+  </div>
 
-<!-- Script menú hamburguesa -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav-links');
+</article>
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('show');
-    });
-  }
-});
-</script>
-
-<!-- AOS Scripts -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('p, h2, img').forEach(el => {
-    if (!el.hasAttribute('data-aos')) {
-      el.setAttribute('data-aos', 'fade-up');
-    }
-  });
-
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-});
-</script>
-
-</body>
-</html>
+<!-- Sección de noticias relacionadas -->
+{% set otrasNoticias = collections.noticias | reverse | rejectattr("url", "equalto", page.url) | slice(0, 2) %}
+{% if otrasNoticias.length %}
+<section class="otras-noticias" data-aos="fade-up">
+  <h3 class="centrado" style="margin-top: 3rem;">También te puede interesar</h3>
+  <div class="noticias-grid">
+    {% for post in otrasNoticias %}
+    <article class="noticia">
+      <a href="{{ post.url }}" class="noticia-imagen-link">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+      </a>
+      <div class="noticia-contenido">
+        <h4 class="noticia-titulo"><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+        <p class="noticia-fecha"><em>{{ post.date | readableDate }}</em></p>
+        <p class="noticia-extracto">{{ post.data.excerpt }}</p>
+        <a href="{{ post.url }}" class="boton boton-lectura">Leer más</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}
