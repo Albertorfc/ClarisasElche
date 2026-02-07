@@ -129,6 +129,7 @@ img {
   font-family: inherit;            /* Georgia, sin letra inglesa */
   font-size: 1.35rem;              /* más grande que el texto normal */
   font-weight: 600;
+  font-style: italic;
   text-align: center;
   color: #6b4e2f;                  /* marrón corporativo */
 
