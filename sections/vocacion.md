@@ -9,12 +9,13 @@ description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discerni
 <article>
   <h2>La Vocación de la Alegría</h2>
   
-  <p>El inicio de nuestra vocación tiene su raíz en la alegría por el <strong>encuentro con Jesucristo resucitado</strong>, y se inicia con la consciencia de la llamada personal de Dios y la respuesta personal a <strong>vivir de la mano de Santa Clara</strong> el seguimiento de Aquél que es <strong>el Camino, la Verdad y la Vida</strong>.</p>
+  <p>El inicio de nuestra vocación tiene su raíz en la alegría por el <strong>encuentro con Jesucristo resucitado</strong>. </p>
+<p>La **vocación** se inicia con la consciencia de la llamada personal de Dios y la respuesta personal a <strong>vivir de la mano de Santa Clara</strong> el seguimiento de Aquél que es <strong>el Camino, la Verdad y la Vida</strong>.</p>
 </article>
 
 <p class="frase-impacto">Feliz, ciertamente, aquella a la que se concede gozar de estas sagradas nupcias...</p>
 
-<em><a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20100915.html">Discurso de SS **Benedicto XVI** sobre **Santa Clara de Asís** de la Audiencia General en la Sala Pablo VI  del miércoles 15 de septiembre de 2010</a></em>
+<em><a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20100915.html">Discurso de SS **Benedicto XVI** sobre **Santa Clara de Asís** en la Audiencia General del miércoles 15 de septiembre de 2010 en la Sala Pablo VI</a></em>
 
 <p>Las Clarisas buscamos configurarnos con Cristo, viviendo como Él vivió: sin posesiones, en obediencia amorosa a la Providencia, fraternidad y adoración continua.</p>
 
@@ -28,7 +29,8 @@ description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discerni
 <article>
   <h2>Vida Contemplativa</h2>
   <img src="/imagenes/vida-contemplativa.png" alt="Vida Contemplativa" />
-  <p>Las Clarisas estamos llamadas a una vida contemplativa, que significa poner el centro de nuestra vida en Jesús a través de la Comunión, la adoración y la oración. Nuestra vocación consiste en <strong>ofrecer nuestra vida como alabanza</strong> y súplica continua por la Iglesia y por el mundo. Nuestra oración silenciosa sostiene espiritualmente a muchos, aunque pueda parecer que permanecemos ocultas.</p>
+  <p>Las Clarisas estamos llamadas a una vida contemplativa, que significa poner el centro de nuestra vida en Jesús a través de la Comunión, la adoración y la oración.</p>
+  <p>Nuestra vocación consiste en <strong>ofrecer nuestra vida como alabanza</strong> y súplica continua por la Iglesia y por el mundo. Nuestra oración silenciosa sostiene espiritualmente a muchos, aunque pueda parecer que permanecemos ocultas.</p>
 </article>
 
 <article>
