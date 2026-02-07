@@ -7,36 +7,86 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description or 'Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516.' }}">
 
-  {# ------------------ CONFIG: dominio del sitio ------------------ #}
-  {# Si tienes un _data/metadata.* con url, se usará; si no, cámbialo aquí #}
+  {# ==========================================================
+     CONFIGURACIÓN GENERAL
+     ========================================================== #}
+
+  {# Dominio del sitio (si existe metadata.url se usa; si no, fallback) #}
   {% set siteUrl = metadata.url or "https://www.clarisaselche.es" %}
-  {# Aseguramos que siteUrl no termina con slash #}
   {% set siteUrl = siteUrl.rstrip('/') %}
 
-  {# ------------------ Detectar si la página es "article" (noticia)  ------------------ #}
-  {% set isArticle = (page.data.excerpt is defined) or (page.data.image is defined) or (page.filePathStem and page.filePathStem contains 'noticias') %}
+  {# ==========================================================
+     DETECCIÓN DE CONTEXTO
+     ========================================================== #}
 
-  {# ------------------ Valores dinámicos con fallbacks ------------------ #}
+  {# Consideramos "article" si es una noticia #}
+  {% set isArticle =
+      page.data.layout == 'noticia.njk'
+      or page.data.excerpt is defined
+      or page.data.image is defined
+  %}
+
+  {# ==========================================================
+     TÍTULO Y DESCRIPCIÓN
+     ========================================================== #}
+
   {% set ogTitle = page.data.title or title or "Hermanas Clarisas de Elche" %}
-  {% set ogDescription = page.data.excerpt or description or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516." %}
+  {% set ogDescription =
+      page.data.excerpt
+      or page.data.description
+      or description
+      or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516."
+  %}
 
-  {# ------------------ Imagen: si page.data.image existe la usamos; si es relativa la convertimos a absoluta #}
-  {% if page.data.image %}
-    {% set rawImage = page.data.image %}
-    {% if '://' in rawImage %}
-      {% set ogImage = rawImage %}
-    {% else %}
-      {% set ogImage = siteUrl + (rawImage.startswith('/') ? rawImage : '/' + rawImage) %}
+  {# ==========================================================
+     SELECCIÓN DE IMAGEN (ROBUSTA)
+     ========================================================== #}
+
+  {# Intentamos localizar la imagen de la noticia #}
+  {% set candidateImages = [
+    page.data.image,
+    image,
+    page.data.featuredImage,
+    page.data.thumbnail
+  ] %}
+
+  {% set chosenImage = none %}
+  {% for img in candidateImages %}
+    {% if img %}
+      {% set chosenImage = img %}
+      {% break %}
     {% endif %}
-  {% else %}
-    {# Fallback a la imagen de la home (asegúrate de subir og-home.jpg) #}
-    {% set ogImage = siteUrl + '/imagenes/og-home.jpg' %}
+  {% endfor %}
+
+  {# Si no aparece, intentamos buscarla en la colección de noticias #}
+  {% if not chosenImage and collections.noticias %}
+    {% for post in collections.noticias %}
+      {% if post.url == page.url and post.data.image %}
+        {% set chosenImage = post.data.image %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
-  {# ------------------ URL absoluta de la página ------------------ #}
+  {# Fallback final a la imagen de la home #}
+  {% if not chosenImage %}
+    {% set chosenImage = '/imagenes/og-home.jpg' %}
+  {% endif %}
+
+  {# Convertimos la imagen a URL absoluta si es relativa #}
+  {% if '://' in chosenImage %}
+    {% set ogImage = chosenImage %}
+  {% else %}
+    {% set ogImage = siteUrl + (chosenImage.startswith('/') ? chosenImage : '/' + chosenImage) %}
+  {% endif %}
+
+  {# URL absoluta de la página #}
   {% set pageUrl = siteUrl + page.url %}
 
-  <!-- ================= Open Graph / WhatsApp / Facebook ================= -->
+  {# ==========================================================
+     OPEN GRAPH / WHATSAPP / FACEBOOK
+     ========================================================== #}
+
   <meta property="og:type" content="{{ 'article' if isArticle else 'website' }}" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Hermanas Clarisas de Elche" />
@@ -50,11 +100,18 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  <!-- ================= Twitter Cards ================= -->
+  {# ==========================================================
+     TWITTER CARDS (WhatsApp también las usa)
+     ========================================================== #}
+
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ ogTitle }}" />
   <meta name="twitter:description" content="{{ ogDescription }}" />
   <meta name="twitter:image" content="{{ ogImage }}" />
+
+  {# ==========================================================
+     RECURSOS
+     ========================================================== #}
 
   <link rel="icon" href="/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="/css/style.css" />
