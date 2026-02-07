@@ -10,7 +10,7 @@ description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discerni
   <h2>La Vocación de la Alegría</h2>
   
   <p>El inicio de nuestra vocación tiene su raíz en la alegría por el <strong>encuentro con Jesucristo resucitado</strong>. </p>
-<p>La **vocación** se inicia con la consciencia de la llamada personal de Dios y la respuesta personal a <strong>vivir de la mano de Santa Clara</strong> el seguimiento de Aquél que es <strong>el Camino, la Verdad y la Vida</strong>.</p>
+<p>La <strong>vocación</strong> se inicia con la consciencia de la llamada personal de Dios y la respuesta personal a <strong>vivir de la mano de Santa Clara</strong> el seguimiento de Aquél que es <strong>el Camino, la Verdad y la Vida</strong>.</p>
 </article>
 
 <p class="frase-impacto">Feliz, ciertamente, aquella a la que se concede gozar de estas sagradas nupcias...</p>
