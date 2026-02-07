@@ -13,7 +13,11 @@ description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discerni
 </article>
 
 <p class="frase-impacto">Feliz, ciertamente, aquella a la que se concede gozar de estas sagradas nupcias...</p>
-<em><a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20100915.html">Leer más</a></em>
+
+<em><a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20100915.html">Discurso sobre **Santa Clara de Asís** de la Audiencia General en la Sala Pablo VI de SS Benedicto XVI del miércoles 15 de septiembre de 2010
+ 
+
+Clara de Asís </a></em>
 
 <p>Las Clarisas buscamos configurarnos con Cristo, viviendo como Él vivió: sin posesiones, en obediencia amorosa a la Providencia, fraternidad y adoración continua.</p>
 
