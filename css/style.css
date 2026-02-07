@@ -488,3 +488,19 @@ footer {
   font-style: italic;
   max-width: 70ch;
 }
+
+
+/* Estilo global de hiperenlaces */
+a {
+  color: #6b4e2f;          /* marrón */
+  text-decoration: none;  /* opcional: quita el subrayado */
+}
+
+a:hover {
+  color: #8b5e3c;          /* marrón más claro al pasar el ratón */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #5a3f27;          /* marrón para enlaces visitados */
+}
