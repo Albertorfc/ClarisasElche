@@ -7,26 +7,54 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description or 'Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516.' }}">
 
+  {# ------------------ CONFIG: dominio del sitio ------------------ #}
+  {# Si tienes un _data/metadata.* con url, se usará; si no, cámbialo aquí #}
+  {% set siteUrl = metadata.url or "https://www.clarisaselche.es" %}
+  {# Aseguramos que siteUrl no termina con slash #}
+  {% set siteUrl = siteUrl.rstrip('/') %}
+
+  {# ------------------ Detectar si la página es "article" (noticia)  ------------------ #}
+  {% set isArticle = (page.data.excerpt is defined) or (page.data.image is defined) or (page.filePathStem and page.filePathStem contains 'noticias') %}
+
+  {# ------------------ Valores dinámicos con fallbacks ------------------ #}
+  {% set ogTitle = page.data.title or title or "Hermanas Clarisas de Elche" %}
+  {% set ogDescription = page.data.excerpt or description or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516." %}
+
+  {# ------------------ Imagen: si page.data.image existe la usamos; si es relativa la convertimos a absoluta #}
+  {% if page.data.image %}
+    {% set rawImage = page.data.image %}
+    {% if '://' in rawImage %}
+      {% set ogImage = rawImage %}
+    {% else %}
+      {% set ogImage = siteUrl + (rawImage.startswith('/') ? rawImage : '/' + rawImage) %}
+    {% endif %}
+  {% else %}
+    {# Fallback a la imagen de la home (asegúrate de subir og-home.jpg) #}
+    {% set ogImage = siteUrl + '/imagenes/og-home.jpg' %}
+  {% endif %}
+
+  {# ------------------ URL absoluta de la página ------------------ #}
+  {% set pageUrl = siteUrl + page.url %}
+
   <!-- ================= Open Graph / WhatsApp / Facebook ================= -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="{{ 'article' if isArticle else 'website' }}" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Hermanas Clarisas de Elche" />
 
-  <meta property="og:title" content="Hermanas Clarisas de Elche" />
-  <meta property="og:description" content="Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516." />
-  <meta property="og:url" content="https://www.clarisaselche.es/" />
+  <meta property="og:title" content="{{ ogTitle }}" />
+  <meta property="og:description" content="{{ ogDescription }}" />
+  <meta property="og:url" content="{{ pageUrl }}" />
 
-  <!-- Imagen optimizada para WhatsApp -->
-  <meta property="og:image" content="https://www.clarisaselche.es/imagenes/og-home.jpg" />
-  <meta property="og:image:secure_url" content="https://www.clarisaselche.es/imagenes/og-home.jpg" />
+  <meta property="og:image" content="{{ ogImage }}" />
+  <meta property="og:image:secure_url" content="{{ ogImage }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
   <!-- ================= Twitter Cards ================= -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Hermanas Clarisas de Elche" />
-  <meta name="twitter:description" content="Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516." />
-  <meta name="twitter:image" content="https://www.clarisaselche.es/imagenes/og-home.jpg" />
+  <meta name="twitter:title" content="{{ ogTitle }}" />
+  <meta name="twitter:description" content="{{ ogDescription }}" />
+  <meta name="twitter:image" content="{{ ogImage }}" />
 
   <link rel="icon" href="/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="/css/style.css" />
