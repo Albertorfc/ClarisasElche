@@ -17,7 +17,8 @@
       or page.data.image is defined
   %}
 
-  {% set ogTitle = page.data.title or title or "Hermanas Clarisas de Elche" %}
+  {# Título #}
+{% set ogTitle = title %}
   {% set ogDescription =
       page.data.excerpt
       or page.data.description
@@ -25,11 +26,11 @@
       or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516."
   %}
 
-  {# PRIORIDAD: variable `image` (front matter), luego page.data.image #}
-  {% set candidateImages = [
-    image,
-    page.data.image
-  ] %}
+{# Imagen: prioridad 1 = imagen front matter `image` #}
+{% set candidateImages = [
+  page.data.image,
+  image
+] %}
 
   {% set chosenImage = none %}
   {% for img in candidateImages %}
