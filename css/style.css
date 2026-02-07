@@ -138,25 +138,26 @@ img {
   border-radius: 14px;
 
   padding: 1.4rem 1.6rem;
-  margin: 2.5rem auto;
+  margin: 2.5rem 0; /* mejor en columnas que auto */
 
-  max-width: 650px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
   line-height: 1.55;
 
   /* Evitar que se parta en columnas */
   break-inside: avoid;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
-  display: inline-block;
-  width: 100%;
-}
 
+  display: block;
+}
 
 /* Evita márgenes extra si algún día lo cambias por <p><span> */
 .frase-impacto > * {
   margin: 0;
 }
-
 
 h2 {
   color: #6b4e2f;
@@ -392,7 +393,6 @@ img.hero-img {
   border-radius: 0 !important;
 }
 
-
 /* ===== Footer: iconos en fila + tooltip ===== */
 
 footer {
@@ -428,7 +428,6 @@ footer {
   transition: transform 0.2s ease-in-out;
 }
 
-
 /* ===== Footer responsive (móvil) ===== */
 @media (max-width: 600px) {
   .footer-links {
@@ -446,11 +445,11 @@ footer {
 
   /* Haz el icono un pelín más grande en móvil (opcional) */
   footer .footer-links img {
-  width: 40px !important;   /* mismo ancho para todos */
-  height: auto !important;  /* respeta proporciones */
-  max-height: 40px;         /* evita que uno quede desproporcionado */
-  transform: none !important;
-}
+    width: 40px !important;   /* mismo ancho para todos */
+    height: auto !important;  /* respeta proporciones */
+    max-height: 40px;         /* evita que uno quede desproporcionado */
+    transform: none !important;
+  }
 
   /* El tooltip pasa a ser un caption visible bajo el icono */
   .footer-links .tooltip {
@@ -489,4 +488,3 @@ footer {
   font-style: italic;
   max-width: 70ch;
 }
-
