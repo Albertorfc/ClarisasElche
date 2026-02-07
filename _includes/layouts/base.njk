@@ -44,8 +44,7 @@
     {% for post in collections.noticias %}
       {% if post.url == page.url and post.data.image %}
         {% set chosenImage = post.data.image %}
-        {% break %}
-      {% endif %}
+        {% endif %}
     {% endfor %}
   {% endif %}
 
