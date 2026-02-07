@@ -14,17 +14,15 @@ description: ¿Sientes la llamada a la vida contemplativa? Conoce cómo discerni
 
 <p class="frase-impacto">Feliz, ciertamente, aquella a la que se concede gozar de estas sagradas nupcias...</p>
 
-<em><a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20100915.html">Discurso sobre **Santa Clara de Asís** de la Audiencia General en la Sala Pablo VI de SS Benedicto XVI del miércoles 15 de septiembre de 2010
- 
-
-Clara de Asís </a></em>
+<em><a href="https://www.vatican.va/content/benedict-xvi/es/audiences/2010/documents/hf_ben-xvi_aud_20100915.html">Discurso de SS **Benedicto XVI** sobre **Santa Clara de Asís** de la Audiencia General en la Sala Pablo VI  del miércoles 15 de septiembre de 2010</a></em>
 
 <p>Las Clarisas buscamos configurarnos con Cristo, viviendo como Él vivió: sin posesiones, en obediencia amorosa a la Providencia, fraternidad y adoración continua.</p>
 
 <article>
   <h2>Seguimiento de Cristo Pobre y Crucificado</h2>
   <img src="/imagenes/seguimiento-cristo.png" alt="Seguimiento de Cristo Pobre y Crucificado" />
-  <p>El centro de la vida clarisa es Jesucristo, especialmente en su pobreza, humildad y entrega total al Padre. <strong>Las Clarisas buscamos identificarnos con Jesús</strong>. La Regla de Santa Clara de Asís expresa y protege esta vocación, pero no la sustituye: la finalidad es buscar a una unión más íntima con Cristo vivo y resucitado.</p>
+  <p>El centro de la vida clarisa es Jesucristo, especialmente en su pobreza, humildad y entrega total al Padre. <strong>Las Clarisas buscamos identificarnos con Jesús</strong>.</p>
+    <p>La Regla de Santa Clara de Asís expresa y protege esta vocación, pero no la sustituye: la finalidad es buscar a una unión más íntima con Cristo vivo y resucitado.</p>
 </article>
 
 <article>
