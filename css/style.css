@@ -126,15 +126,15 @@ img {
 
 /* Frase destacada en index y páginas: caja sobria y legible */
 .frase-impacto {
-  font-family: inherit;            /* Georgia, sin letra inglesa */
-  font-size: 1.35rem;              /* más grande que el texto normal */
+  font-family: inherit;
+  font-size: 1.35rem;
   font-weight: 600;
   font-style: italic;
   text-align: center;
-  color: #6b4e2f;                  /* marrón corporativo */
+  color: #6b4e2f;
 
-  background-color: #f2ebe2;       /* igual que excerpt */
-  border-left: 5px solid #6b4e2f;  /* contundente pero discreto */
+  background-color: #f2ebe2;
+  border-left: 5px solid #6b4e2f;
   border-radius: 14px;
 
   padding: 1.4rem 1.6rem;
@@ -142,7 +142,15 @@ img {
 
   max-width: 650px;
   line-height: 1.55;
+
+  /* Evitar que se parta en columnas */
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  display: inline-block;
+  width: 100%;
 }
+
 
 /* Evita márgenes extra si algún día lo cambias por <p><span> */
 .frase-impacto > * {
