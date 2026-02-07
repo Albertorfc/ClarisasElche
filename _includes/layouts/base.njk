@@ -7,17 +7,9 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description or 'Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516.' }}">
 
-  {# ==========================================================
-     CONFIGURACIÓN GENERAL
-     ========================================================== #}
-
   {# Dominio del sitio (si existe metadata.url se usa; si no, fallback) #}
   {% set siteUrl = metadata.url or "https://www.clarisaselche.es" %}
   {% set siteUrl = siteUrl.rstrip('/') %}
-
-  {# ==========================================================
-     DETECCIÓN DE CONTEXTO
-     ========================================================== #}
 
   {# Consideramos "article" si es una noticia #}
   {% set isArticle =
@@ -25,10 +17,6 @@
       or page.data.excerpt is defined
       or page.data.image is defined
   %}
-
-  {# ==========================================================
-     TÍTULO Y DESCRIPCIÓN
-     ========================================================== #}
 
   {% set ogTitle = page.data.title or title or "Hermanas Clarisas de Elche" %}
   {% set ogDescription =
@@ -38,11 +26,7 @@
       or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516."
   %}
 
-  {# ==========================================================
-     SELECCIÓN DE IMAGEN (AJUSTADA: prioriza la variable `image` del front matter)
-     ========================================================== #}
-
-  {# Buscamos de forma explícita 'image' (front matter) primero y luego page.data.image #}
+  {# PRIORIDAD: variable `image` (front matter), luego page.data.image #}
   {% set candidateImages = [
     image,
     page.data.image
@@ -50,9 +34,8 @@
 
   {% set chosenImage = none %}
   {% for img in candidateImages %}
-    {% if img %}
+    {% if img and not chosenImage %}
       {% set chosenImage = img %}
-      {% break %}
     {% endif %}
   {% endfor %}
 
@@ -81,10 +64,7 @@
   {# URL absoluta de la página #}
   {% set pageUrl = siteUrl + page.url %}
 
-  {# ==========================================================
-     OPEN GRAPH / WHATSAPP / FACEBOOK
-     ========================================================== #}
-
+  <!-- Open Graph -->
   <meta property="og:type" content="{{ 'article' if isArticle else 'website' }}" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Hermanas Clarisas de Elche" />
@@ -98,18 +78,11 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  {# ==========================================================
-     TWITTER CARDS (WhatsApp también las usa)
-     ========================================================== #}
-
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ ogTitle }}" />
   <meta name="twitter:description" content="{{ ogDescription }}" />
   <meta name="twitter:image" content="{{ ogImage }}" />
-
-  {# ==========================================================
-     RECURSOS
-     ========================================================== #}
 
   <link rel="icon" href="/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="/css/style.css" />
@@ -119,7 +92,6 @@
 
 <body>
 
-<!-- Cabecera común -->
 <header class="hero-header">
   <img src="/imagenes/noticias/20250811.png" alt="Encabezado" class="hero-img" />
   <div class="hero-texto">
@@ -129,7 +101,6 @@
   </div>
 </header>
 
-<!-- Menú común -->
 <nav>
   <div class="nav-container">
     <button class="menu-toggle">☰</button>
@@ -137,7 +108,6 @@
   </div>
 </nav>
 
-<!-- Contenido de cada página -->
 <main>
   <div class="columnas-balanceadas">
     {% block content %}
@@ -172,7 +142,6 @@
   <p>&copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara</p>
 </footer>
 
-<!-- Script menú hamburguesa -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
@@ -186,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- AOS Scripts -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
