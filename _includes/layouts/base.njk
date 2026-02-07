@@ -39,15 +39,13 @@
   %}
 
   {# ==========================================================
-     SELECCIÓN DE IMAGEN (ROBUSTA)
+     SELECCIÓN DE IMAGEN (AJUSTADA: prioriza la variable `image` del front matter)
      ========================================================== #}
 
-  {# Intentamos localizar la imagen de la noticia #}
+  {# Buscamos de forma explícita 'image' (front matter) primero y luego page.data.image #}
   {% set candidateImages = [
-    page.data.image,
     image,
-    page.data.featuredImage,
-    page.data.thumbnail
+    page.data.image
   ] %}
 
   {% set chosenImage = none %}
@@ -58,7 +56,7 @@
     {% endif %}
   {% endfor %}
 
-  {# Si no aparece, intentamos buscarla en la colección de noticias #}
+  {# Si no aparece, intentamos buscarla en la colección de noticias (último recurso) #}
   {% if not chosenImage and collections.noticias %}
     {% for post in collections.noticias %}
       {% if post.url == page.url and post.data.image %}
