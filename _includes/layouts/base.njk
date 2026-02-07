@@ -13,17 +13,25 @@
   {# Detectar si es una noticia #}
   {% set isArticle = layout == "noticia.njk" %}
 
-  {# Open Graph title #}
-  {% set ogTitle = title or "Hermanas Clarisas de Elche" %}
+  {# Open Graph title (home limpia, resto con marca) #}
+  {% if page.url == "/" %}
+    {% set ogTitle = "Clarisas Elche" %}
+  {% else %}
+    {% if title %}
+      {% set ogTitle = title + " · Clarisas Elche" %}
+    {% else %}
+      {% set ogTitle = "Clarisas Elche" %}
+    {% endif %}
+  {% endif %}
 
-  {# Open Graph description (prioridad: excerpt → description → fallback) #}
+  {# Open Graph description #}
   {% set ogDescription =
     excerpt
     or description
     or "Monasterio de Santa Clara. Siguiendo a Cristo en Elche desde 1516."
   %}
 
-  {# Imagen Open Graph (prioridad: image → fallback) #}
+  {# Open Graph image (prioridad: image → fallback) #}
   {% set chosenImage = image or "/imagenes/og-home.jpg" %}
 
   {# Convertir imagen a URL absoluta #}
@@ -43,7 +51,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="{{ 'article' if isArticle else 'website' }}" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:site_name" content="Hermanas Clarisas de Elche" />
+  <meta property="og:site_name" content="Clarisas Elche" />
   <meta property="og:title" content="{{ ogTitle }}" />
   <meta property="og:description" content="{{ ogDescription }}" />
   <meta property="og:url" content="{{ pageUrl }}" />
