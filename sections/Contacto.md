@@ -53,7 +53,7 @@ description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en
   </p>
   
   <p>
-  Se puede llegar a pie desde la Avenida Alcalde Vicente Quiles (antiguamente del Ferrrocarril) a cruzando el Parque Infantil de Tráfico, o en coche, con aparcamiento disponible.
+    Se puede llegar a pie desde la Avenida Alcalde Vicente Quiles (antiguamente del Ferrrocarril) cruzando el Parque Infantil de Tráfico, o en coche, con aparcamiento disponible.
   </p>
 
   <div style="margin-top: 1.5rem;">
@@ -64,21 +64,40 @@ description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en
   </div>
 </section>
 
-<!-- Formulario -->
+<!-- Formulario Netlify -->
 <section>
   <h2 style="text-align: center;">Formulario de contacto</h2>
-  <p>
-    <em> Todavía en pruebas (no disponible)</em>
+  <p style="max-width: 600px; margin: 0 auto 1rem auto; text-align: center;">
+    <em>Tu mensaje llegará a las hermanas. Responderán cuando les sea posible.</em>
+  </p>
+
+  <form
+    name="contacto-clarisas"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/gracias/"
+    style="max-width: 600px; margin: 2rem auto; padding: 1rem;"
+  >
+    <!-- Necesario para Netlify Forms -->
+    <input type="hidden" name="form-name" value="contacto-clarisas" />
+
+    <!-- Honeypot anti-spam -->
+    <p hidden>
+      <label>No rellenar: <input name="bot-field" /></label>
     </p>
-  <form action="https://formspree.io/f/mnnzadll" method="POST" style="max-width: 600px; margin: 2rem auto; padding: 1rem;">
+
     <label for="nombre">Nombre</label><br />
-    <input type="text" id="nombre" name="nombre" required style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"><br />
+    <input type="text" id="nombre" name="nombre" autocomplete="name" required
+           style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"><br />
 
     <label for="email">Correo electrónico</label><br />
-    <input type="email" id="email" name="email" required style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"><br />
+    <input type="email" id="email" name="email" autocomplete="email" required
+           style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"><br />
 
     <label for="mensaje">Mensaje</label><br />
-    <textarea id="mensaje" name="mensaje" rows="6" required style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea><br />
+    <textarea id="mensaje" name="mensaje" rows="6" required
+              style="width:100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea><br />
 
     <button type="submit" class="boton">Enviar mensaje</button>
   </form>
@@ -92,4 +111,4 @@ description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en
     Os muestre su faz y tenga misericordia de vosotras. <br />
     Vuelva su rostro a vosotras y os dé la paz.
   </p>
-</secti
+</section>
