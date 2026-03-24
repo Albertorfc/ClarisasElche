@@ -76,7 +76,7 @@ description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en
 <section>
   <h2 style="text-align: center;">Formulario de contacto</h2>
   <p style="max-width: 600px; margin: 0 auto 1rem auto; text-align: center;">
-    <em>Tu mensaje llegará a las hermanas. Responderán cuando les sea posible.</em>
+    <em>Tu mensaje llegará a las hermanas a través del webmaster. Las hermanas están encantadas de responder cuando les sea posible.</em>
   </p>
 
   <form
