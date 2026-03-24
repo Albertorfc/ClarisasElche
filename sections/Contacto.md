@@ -31,7 +31,7 @@ description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en
   <div>
     <h2>Horarios de Oficios de Semana Santa</h2>
     <p><strong>Jueves Santo (Misa de la Cena del Señor):</strong> 🕢 19:30 h<br />
-    <p><strong>Viernes Santo (Celebración de la Pasión del Señor):</strong> 🕔 17:00 h<br />  
+    <p><strong>Viernes Santo (Pasión del Señor):</strong> 🕔 17:00 h<br />  
     <strong>Sábado Santo (Vigilia Pascual):</strong> 🕘 21:00 h</p>
 
 
