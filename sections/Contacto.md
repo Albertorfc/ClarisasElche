@@ -25,12 +25,20 @@ description: Contacta con las Hermanas Clarisas del Monasterio de Santa Clara en
 
   <div>
     <h2>Horarios de Misa</h2>
-    <p><strong>Lunes a sábado:</strong> 🕗 8:00 h<br />
+    <p><strong>Lunes a sábado:</strong> 🕗 7:50 h<br />
     <strong>Domingos y festivos:</strong> 🕚 11:00 h</p>
+
+  <div>
+    <h2>Horarios de Oficios de Semana Santa</h2>
+    <p><strong>Jueves Santo (Misa de la Cena del Señor):</strong> 🕢 19:30 h<br />
+    <p><strong>Viernes Santo (Celebración de la Pasión del Señor):</strong> 🕔 17:00 h<br />  
+    <strong>Sábado Santo (Vigilia Pascual):</strong> 🕘 21:00 h</p>
+
 
     <h2>Visitas en el torno</h2>
     <p>
-      De lunes a sábado: 🕘 9:00 – 🕞 13:30 y 🕓 16:00 – 🕕 18:00<br />
+      De lunes a viernes: 🕘 9:00 – 🕑 13:00 y 🕓 16:00 – 🕕 18:00<br />
+      Sábado: 🕘 9:00 – 🕑 13:00<br />
       <em>(Domingos y festivos no se atiende)</em>
     </p>
   </div>
